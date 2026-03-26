@@ -2,1106 +2,1241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>ShieldHer — Women Safety Portal | Madhya Pradesh</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShieldHer-22 — Women Safety Portal | Himachal Pradesh</title>
 <style>
-:root{--pink:#ff3d8b;--orange:#ff7043;--yellow:#ffd600;--purple:#7c3aed;--teal:#00bcd4;--green:#00e676;--dark:#0d0d1a;--card-bg:#13132a;--text:#f0eafb;--muted:#a09ab8;--border:rgba(255,255,255,0.08);}
-*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
-body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;}
-::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-track{background:#0d0d1a;}::-webkit-scrollbar-thumb{background:var(--pink);border-radius:3px;}
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:14px 36px;background:rgba(13,13,26,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
-.logo{font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;background:linear-gradient(90deg,var(--pink),var(--orange),var(--yellow));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-.nav-links{display:flex;gap:16px;list-style:none;}
-.nav-links a{color:var(--muted);text-decoration:none;font-size:.78rem;font-weight:500;transition:color .2s;}
-.nav-links a:hover{color:var(--pink);}
-.sos-nav{background:var(--pink);color:#fff;border:none;padding:9px 20px;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;font-size:.82rem;cursor:pointer;box-shadow:0 0 20px rgba(255,61,139,.5);animation:pulse-nav 2s infinite;transition:transform .2s;}
-.sos-nav:hover{transform:scale(1.05);}
-@keyframes pulse-nav{0%,100%{box-shadow:0 0 20px rgba(255,61,139,.5);}50%{box-shadow:0 0 40px rgba(255,61,139,.9);}}
-#home{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:120px 48px 80px;text-align:center;}
-.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 40%,rgba(255,61,139,.18) 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 80% 60%,rgba(124,58,237,.2) 0%,transparent 60%),var(--dark);}
-.floating-shapes{position:absolute;inset:0;pointer-events:none;}
-.shape{position:absolute;border-radius:50%;animation:float 6s ease-in-out infinite;opacity:.12;}
-.shape:nth-child(1){width:320px;height:320px;background:var(--pink);top:8%;left:3%;animation-delay:0s;}
-.shape:nth-child(2){width:220px;height:220px;background:var(--purple);top:55%;right:5%;animation-delay:2s;}
-.shape:nth-child(3){width:160px;height:160px;background:var(--teal);bottom:8%;left:28%;animation-delay:4s;}
-.shape:nth-child(4){width:110px;height:110px;background:var(--yellow);top:18%;right:22%;animation-delay:1s;}
-@keyframes float{0%,100%{transform:translateY(0) scale(1);}50%{transform:translateY(-30px) scale(1.05);}}
-.hero-badge{display:inline-block;background:rgba(255,61,139,.15);border:1px solid rgba(255,61,139,.4);color:var(--pink);padding:8px 20px;border-radius:50px;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:28px;animation:fadeUp .8s ease both;}
-.hero-title{font-family:'Syne',sans-serif;font-size:clamp(2.6rem,7vw,5.2rem);font-weight:800;line-height:1.05;margin-bottom:24px;animation:fadeUp .8s ease .15s both;}
-.hero-title span{background:linear-gradient(90deg,var(--pink),var(--orange),var(--yellow));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-.hero-sub{font-size:1.1rem;color:var(--muted);max-width:600px;line-height:1.7;margin-bottom:48px;animation:fadeUp .8s ease .3s both;}
-.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;animation:fadeUp .8s ease .45s both;}
-.btn-primary{background:linear-gradient(135deg,var(--pink),var(--orange));color:#fff;border:none;padding:15px 34px;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;cursor:pointer;box-shadow:0 8px 32px rgba(255,61,139,.4);transition:transform .2s,box-shadow .2s;text-decoration:none;display:inline-block;}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(255,61,139,.5);}
-.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border);padding:15px 34px;border-radius:50px;font-family:'Syne',sans-serif;font-weight:600;font-size:.95rem;cursor:pointer;transition:border-color .2s,background .2s;text-decoration:none;display:inline-block;}
-.btn-outline:hover{border-color:var(--pink);background:rgba(255,61,139,.1);}
-@keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
-.helpline-strip{padding:16px 36px;background:linear-gradient(90deg,var(--pink),var(--purple),var(--teal));display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;}
-.helpline-item .num{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;color:#fff;}
-.helpline-item .label{font-size:.72rem;color:rgba(255,255,255,.9);font-weight:500;}
-section{padding:76px 44px;}
-.section-tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:50px;margin-bottom:14px;}
-.section-title{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;line-height:1.1;margin-bottom:14px;}
-.section-sub{color:var(--muted);font-size:.92rem;max-width:540px;line-height:1.75;margin-bottom:40px;}
-/* HELPLINES */
-#helplines{background:var(--card-bg);}
-.helplines-category{margin-bottom:44px;}
-.category-title{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;}
-.helplines-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px;}
-.helpline-card{background:var(--dark);border:1px solid var(--border);border-radius:16px;padding:20px 22px;display:flex;gap:16px;transition:transform .3s,border-color .3s,box-shadow .3s;cursor:pointer;align-items:flex-start;}
-.helpline-card:hover{transform:translateY(-5px);border-color:var(--pink);box-shadow:0 12px 40px rgba(255,61,139,.2);}
-.hc-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;}
-.hc-name{font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;margin-bottom:3px;}
-.hc-number{font-size:1.6rem;font-weight:800;font-family:'Syne',sans-serif;line-height:1.1;}
-.hc-desc{font-size:.76rem;color:var(--muted);margin-top:5px;line-height:1.55;}
-.hc-badge{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:2px 8px;border-radius:50px;margin-top:5px;}
-/* SOS */
-#sos{background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(255,61,139,.12),var(--dark));text-align:center;}
-.sos-setup-panel{max-width:480px;margin:0 auto 36px;background:var(--card-bg);border:1px solid var(--border);border-radius:18px;padding:26px;}
-.sos-setup-title{font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:14px;color:var(--yellow);}
-.sos-input{background:var(--dark);border:1px solid var(--border);border-radius:10px;padding:11px 15px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:.88rem;width:100%;outline:none;margin-bottom:9px;transition:border-color .2s;}
-.sos-input:focus{border-color:var(--pink);}
-.sos-save-btn{background:var(--pink);color:#fff;border:none;padding:12px 28px;border-radius:10px;font-family:'Syne',sans-serif;font-weight:700;font-size:.88rem;cursor:pointer;width:100%;margin-top:2px;transition:background .2s;}
-.sos-save-btn:hover{background:#ff1a77;}
-.sos-saved-msg{font-size:.78rem;color:var(--green);margin-top:7px;display:none;}
-.sos-ring-wrap{display:flex;align-items:center;justify-content:center;margin:0 auto 28px;position:relative;width:230px;height:230px;}
-.sos-ring{position:absolute;border-radius:50%;border:2px solid rgba(255,61,139,.3);animation:sos-ripple 2.5s ease-out infinite;}
-.sos-ring:nth-child(1){width:230px;height:230px;animation-delay:0s;}
-.sos-ring:nth-child(2){width:180px;height:180px;animation-delay:.7s;}
-.sos-ring:nth-child(3){width:130px;height:130px;animation-delay:1.4s;}
-@keyframes sos-ripple{0%{transform:scale(.8);opacity:1;}100%{transform:scale(1.4);opacity:0;}}
-.sos-btn-main{position:absolute;width:105px;height:105px;border-radius:50%;background:linear-gradient(135deg,#ff3d8b,#ff1744);border:none;cursor:pointer;font-family:'Syne',sans-serif;font-weight:800;font-size:.9rem;color:#fff;box-shadow:0 0 60px rgba(255,61,139,.7);transition:transform .15s;user-select:none;}
-.sos-btn-main:active{transform:scale(.95);}
-#sos-status{margin-top:8px;font-size:.92rem;color:var(--muted);min-height:80px;transition:color .3s;padding:0 16px;line-height:1.7;}
-.sos-features{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:24px;}
-.sos-feat{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:14px 20px;display:flex;align-items:center;gap:10px;font-size:.82rem;font-weight:500;}
-.sos-feat span{font-size:1.2rem;}
-.location-display{background:var(--card-bg);border:1px solid rgba(0,230,118,.3);border-radius:12px;padding:14px 22px;margin:16px auto 0;max-width:540px;font-size:.83rem;color:var(--green);display:none;}
-/* PREVENTIVE */
-#preventive{background:var(--card-bg);}
-.prev-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px;}
-.prev-tab{background:var(--dark);border:1px solid var(--border);border-radius:50px;padding:9px 20px;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .2s;color:var(--muted);}
-.prev-tab.active{background:var(--pink);color:#fff;border-color:var(--pink);}
-.prev-panel{display:none;}
-.prev-panel.active{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;}
-.prev-card{background:var(--dark);border:1px solid var(--border);border-radius:16px;padding:22px;transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden;}
-.prev-card:hover{transform:translateY(-5px);box-shadow:0 16px 44px rgba(0,0,0,.4);}
-.prev-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;}
-.prev-card:nth-child(odd)::after{background:linear-gradient(90deg,var(--pink),var(--orange));}
-.prev-card:nth-child(even)::after{background:linear-gradient(90deg,var(--purple),var(--teal));}
-.prev-icon{font-size:1.9rem;margin-bottom:10px;}
-.prev-title{font-family:'Syne',sans-serif;font-weight:700;font-size:.97rem;margin-bottom:7px;}
-.prev-text{font-size:.82rem;color:var(--muted);line-height:1.6;margin-bottom:8px;}
-.prev-points{list-style:none;display:flex;flex-direction:column;gap:5px;}
-.prev-points li{font-size:.8rem;color:var(--muted);padding-left:15px;position:relative;line-height:1.5;}
-.prev-points li::before{content:'▸';position:absolute;left:0;color:var(--pink);font-size:.68rem;top:2px;}
-/* TIPS */
-#tips{background:var(--dark);}
-.tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;}
-.tip-card{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:24px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s;}
-.tip-card:hover{transform:translateY(-5px);box-shadow:0 18px 48px rgba(0,0,0,.4);}
-.tip-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
-.tip-card:nth-child(1)::before{background:linear-gradient(90deg,var(--pink),var(--orange));}
-.tip-card:nth-child(2)::before{background:linear-gradient(90deg,var(--purple),var(--teal));}
-.tip-card:nth-child(3)::before{background:linear-gradient(90deg,var(--teal),var(--green));}
-.tip-card:nth-child(4)::before{background:linear-gradient(90deg,var(--yellow),var(--orange));}
-.tip-card:nth-child(5)::before{background:linear-gradient(90deg,var(--green),var(--teal));}
-.tip-card:nth-child(6)::before{background:linear-gradient(90deg,var(--orange),var(--pink));}
-.tip-card:nth-child(7)::before{background:linear-gradient(90deg,var(--purple),var(--pink));}
-.tip-card:nth-child(8)::before{background:linear-gradient(90deg,var(--teal),var(--yellow));}
-.tip-num{font-family:'Syne',sans-serif;font-size:2.6rem;font-weight:800;color:rgba(255,255,255,.06);position:absolute;top:12px;right:16px;}
-.tip-icon{font-size:1.8rem;margin-bottom:10px;}
-.tip-title{font-family:'Syne',sans-serif;font-weight:700;font-size:.97rem;margin-bottom:7px;}
-.tip-text{font-size:.82rem;color:var(--muted);line-height:1.65;}
-/* NEARBY */
-#nearby{background:var(--card-bg);}
-.mp-district-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
-.dist-tab{background:var(--dark);border:1px solid var(--border);border-radius:50px;padding:7px 16px;font-size:.78rem;font-weight:600;cursor:pointer;transition:all .2s;color:var(--muted);}
-.dist-tab.active{background:var(--teal);color:#1a1a2e;border-color:var(--teal);}
-.nearby-layout{display:grid;grid-template-columns:1fr 1.3fr;gap:24px;align-items:start;}
-.map-placeholder{background:var(--dark);border:1px solid var(--border);border-radius:20px;height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden;}
-.map-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,188,212,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,188,212,.06) 1px,transparent 1px);background-size:34px 34px;}
-.map-pin{font-size:2.6rem;animation:bounce 1.5s ease infinite;z-index:1;}
-@keyframes bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
-.map-label{font-family:'Syne',sans-serif;font-size:.97rem;font-weight:700;z-index:1;}
-.map-sublabel{font-size:.75rem;color:var(--muted);z-index:1;}
-.map-coords{font-size:.7rem;color:var(--teal);z-index:1;font-family:monospace;}
-.nearby-list{display:flex;flex-direction:column;gap:10px;max-height:400px;overflow-y:auto;padding-right:4px;}
-.nearby-list::-webkit-scrollbar{width:4px;}
-.nearby-list::-webkit-scrollbar-thumb{background:var(--teal);border-radius:2px;}
-.nearby-item{background:var(--dark);border:1px solid var(--border);border-radius:13px;padding:14px 16px;display:flex;align-items:center;gap:12px;transition:border-color .3s,transform .3s;}
-.nearby-item:hover{border-color:var(--teal);transform:translateX(5px);}
-.ni-icon{font-size:1.5rem;width:38px;text-align:center;flex-shrink:0;}
-.ni-name{font-family:'Syne',sans-serif;font-weight:700;font-size:.84rem;margin-bottom:2px;}
-.ni-dist{font-size:.7rem;color:var(--muted);}
-.ni-phone{font-size:.7rem;color:var(--teal);margin-top:1px;}
-.ni-btn{margin-left:auto;background:rgba(0,188,212,.15);border:1px solid rgba(0,188,212,.3);color:var(--teal);padding:6px 13px;border-radius:50px;font-size:.7rem;font-weight:600;cursor:pointer;transition:background .2s;white-space:nowrap;text-decoration:none;}
-.ni-btn:hover{background:rgba(0,188,212,.3);}
-/* DEFENSE */
-#selfdefense{background:var(--dark);}
-.defense-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
-.defense-card{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:24px;transition:transform .3s,box-shadow .3s;}
-.defense-card:hover{transform:translateY(-5px);box-shadow:0 18px 48px rgba(0,0,0,.4);}
-.dc-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
-.dc-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;}
-.dc-title{font-family:'Syne',sans-serif;font-weight:700;font-size:.97rem;}
-.dc-level{font-size:.7rem;color:var(--muted);margin-top:2px;}
-.dc-steps{list-style:none;display:flex;flex-direction:column;gap:8px;}
-.dc-steps li{font-size:.81rem;color:var(--muted);line-height:1.6;padding-left:17px;position:relative;}
-.dc-steps li::before{content:'→';position:absolute;left:0;font-weight:700;font-size:.7rem;color:var(--orange);}
-/* RIGHTS */
-#rights{background:var(--card-bg);}
-.rights-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:16px;}
-.right-card{background:var(--dark);border:1px solid var(--border);border-radius:16px;padding:24px;transition:transform .3s,border-color .3s;}
-.right-card:hover{transform:translateY(-5px);border-color:var(--purple);}
-.rc-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 11px;border-radius:50px;margin-bottom:11px;}
-.rc-title{font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:8px;}
-.rc-text{font-size:.81rem;color:var(--muted);line-height:1.65;}
-.rc-year{font-size:.71rem;color:var(--muted);margin-top:11px;padding-top:9px;border-top:1px solid var(--border);}
-/* REPORT */
-#report{background:radial-gradient(ellipse 60% 60% at 50% 50%,rgba(124,58,237,.1),var(--dark));}
-.report-wrap{max-width:680px;margin:0 auto;background:var(--card-bg);border:1px solid var(--border);border-radius:24px;padding:40px;}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-.form-group{display:flex;flex-direction:column;gap:7px;}
-.form-group.full{grid-column:1/-1;}
-.form-label{font-size:.76rem;font-weight:600;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;}
-.form-input,.form-select,.form-textarea{background:var(--dark);border:1px solid var(--border);border-radius:10px;padding:12px 16px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:.88rem;outline:none;transition:border-color .2s,box-shadow .2s;width:100%;}
-.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--purple);box-shadow:0 0 0 3px rgba(124,58,237,.2);}
-.form-textarea{resize:vertical;min-height:105px;}
-.form-select option{background:var(--card-bg);}
-.anonymous-check{display:flex;align-items:center;gap:12px;background:rgba(124,58,237,.1);border:1px solid rgba(124,58,237,.3);border-radius:11px;padding:13px 17px;cursor:pointer;}
-.anonymous-check input{width:16px;height:16px;accent-color:var(--purple);cursor:pointer;}
-.anonymous-check label{font-size:.86rem;font-weight:500;cursor:pointer;}
-.submit-btn{width:100%;padding:16px;background:linear-gradient(135deg,var(--purple),var(--pink));border:none;border-radius:12px;color:#fff;font-family:'Syne',sans-serif;font-weight:700;font-size:.97rem;letter-spacing:.04em;cursor:pointer;margin-top:8px;box-shadow:0 8px 32px rgba(124,58,237,.4);transition:transform .2s,box-shadow .2s;}
-.submit-btn:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(124,58,237,.5);}
-#form-success{display:none;text-align:center;padding:22px;color:var(--green);font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;line-height:1.9;}
-footer{background:#0a0a14;border-top:1px solid var(--border);padding:36px 44px;text-align:center;}
-.footer-logo{font-family:'Syne',sans-serif;font-size:1.35rem;font-weight:800;background:linear-gradient(90deg,var(--pink),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px;}
-.footer-text{color:var(--muted);font-size:.82rem;line-height:1.75;}
-.footer-hotlines{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px;}
-.fh-item{background:rgba(255,61,139,.1);border:1px solid rgba(255,61,139,.25);border-radius:9px;padding:9px 18px;font-size:.8rem;}
-.fh-item strong{color:var(--pink);font-family:'Syne',sans-serif;}
-.reveal{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .7s ease;}
-.reveal.visible{opacity:1;transform:translateY(0);}
-@media(max-width:900px){nav{padding:12px 18px;}.nav-links{display:none;}section{padding:56px 18px;}.helpline-strip{padding:12px 18px;gap:12px;}.nearby-layout{grid-template-columns:1fr;}.form-grid{grid-template-columns:1fr;}.report-wrap{padding:24px 16px;}.hero-ctas{flex-direction:column;align-items:center;}}
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+  :root {
+    --bg: #0a0f1e;
+    --bg2: #111827;
+    --bg3: #1a2235;
+    --accent: #e83e8c;
+    --accent2: #f97316;
+    --accent3: #06b6d4;
+    --gold: #fbbf24;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --border: rgba(255,255,255,0.08);
+    --card: rgba(255,255,255,0.04);
+    --radius: 16px;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top:0; z-index:999;
+    background: rgba(10,15,30,0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px;
+    display: flex; align-items:center; gap:8px;
+    flex-wrap: wrap;
+    min-height: 60px;
+  }
+  .nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem; font-weight:900;
+    color: var(--accent);
+    margin-right: 16px; white-space:nowrap;
+  }
+  nav a {
+    color: var(--muted); text-decoration:none;
+    font-size: 0.78rem; font-weight:500;
+    padding: 6px 10px; border-radius:8px;
+    transition: all 0.2s; white-space:nowrap;
+  }
+  nav a:hover { color:var(--text); background:var(--card); }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    padding: 100px 24px 80px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero::before {
+    content:'';
+    position:absolute; inset:0;
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(232,62,140,0.18) 0%, transparent 70%),
+                radial-gradient(ellipse 60% 40% at 80% 100%, rgba(6,182,212,0.12) 0%, transparent 60%);
+    pointer-events:none;
+  }
+  .hero-badge {
+    display:inline-block;
+    background: linear-gradient(135deg, rgba(232,62,140,0.2), rgba(249,115,22,0.2));
+    border: 1px solid rgba(232,62,140,0.4);
+    color: var(--accent); padding:6px 18px; border-radius:99px;
+    font-size:0.82rem; font-weight:600; letter-spacing:0.05em;
+    margin-bottom:24px; text-transform:uppercase;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    font-weight:900; line-height:1.1;
+    margin-bottom:20px;
+  }
+  .hero h1 span { color: var(--accent); }
+  .hero p {
+    max-width:640px; margin:0 auto 40px;
+    color:var(--muted); font-size:1.05rem;
+  }
+  .hero-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--accent), #c2185b);
+    color:#fff; padding:14px 28px; border-radius:12px;
+    text-decoration:none; font-weight:600; font-size:0.95rem;
+    box-shadow: 0 4px 24px rgba(232,62,140,0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 32px rgba(232,62,140,0.5); }
+  .btn-secondary {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color:var(--text); padding:14px 28px; border-radius:12px;
+    text-decoration:none; font-weight:600; font-size:0.95rem;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover { background:rgba(255,255,255,0.08); }
+
+  /* ── QUICK NUMBERS ── */
+  .quick-numbers {
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:12px; max-width:1100px; margin:0 auto;
+    padding:0 24px 60px;
+  }
+  .qn {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:var(--radius); padding:18px;
+    text-align:center;
+    transition: border-color 0.2s;
+  }
+  .qn:hover { border-color: var(--accent); }
+  .qn-num { font-size:1.8rem; font-weight:700; color:var(--accent); }
+  .qn-label { font-size:0.78rem; color:var(--muted); margin-top:4px; }
+
+  /* ── SECTION ── */
+  section {
+    max-width:1100px; margin:0 auto;
+    padding:60px 24px;
+  }
+  .section-tag {
+    display:inline-block;
+    background: rgba(232,62,140,0.12);
+    border: 1px solid rgba(232,62,140,0.25);
+    color:var(--accent); padding:4px 14px; border-radius:99px;
+    font-size:0.75rem; font-weight:600; letter-spacing:0.08em;
+    text-transform:uppercase; margin-bottom:14px;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight:700; margin-bottom:10px;
+  }
+  .section-sub { color:var(--muted); max-width:620px; margin-bottom:40px; }
+
+  /* ── HELPLINE CARDS ── */
+  .helpline-group { margin-bottom:36px; }
+  .helpline-group-title {
+    font-size:0.85rem; font-weight:700; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--accent2);
+    margin-bottom:16px; padding-bottom:8px;
+    border-bottom:1px solid var(--border);
+  }
+  .helplines-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:16px; }
+  .helpline-card {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:var(--radius); padding:20px;
+    display:grid; grid-template-columns:48px 1fr; gap:14px;
+    align-items:start; transition:border-color 0.2s, transform 0.2s;
+  }
+  .helpline-card:hover { border-color:var(--accent); transform:translateY(-2px); }
+  .helpline-icon {
+    width:48px; height:48px; border-radius:12px;
+    background:rgba(232,62,140,0.12);
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.4rem;
+  }
+  .helpline-name { font-weight:600; font-size:0.95rem; margin-bottom:2px; }
+  .helpline-num {
+    font-size:1.4rem; font-weight:700; color:var(--accent);
+    font-variant-numeric: tabular-nums; margin-bottom:6px;
+  }
+  .helpline-num a { color:inherit; text-decoration:none; }
+  .helpline-desc { font-size:0.82rem; color:var(--muted); line-height:1.5; }
+  .helpline-badge {
+    display:inline-block; font-size:0.7rem; font-weight:600;
+    background:rgba(6,182,212,0.12); border:1px solid rgba(6,182,212,0.25);
+    color:var(--accent3); padding:2px 8px; border-radius:99px;
+    margin-top:8px; margin-right:4px;
+  }
+
+  /* ── SOS ── */
+  #sos { background: var(--bg2); border-radius:24px; padding:50px 24px; margin:0 24px; }
+  .sos-inner { max-width:600px; margin:0 auto; text-align:center; }
+  .sos-inputs { display:grid; gap:12px; margin:30px 0; text-align:left; }
+  .sos-inputs label { font-size:0.82rem; color:var(--muted); margin-bottom:4px; display:block; }
+  .sos-inputs input {
+    width:100%; padding:12px 16px; border-radius:10px;
+    background:var(--bg3); border:1px solid var(--border);
+    color:var(--text); font-size:0.9rem; font-family:inherit;
+    transition:border-color 0.2s;
+  }
+  .sos-inputs input:focus { outline:none; border-color:var(--accent); }
+  .save-btn {
+    width:100%; padding:14px; border-radius:12px;
+    background:var(--bg3); border:1px solid var(--border);
+    color:var(--text); font-weight:600; cursor:pointer;
+    transition:all 0.2s; font-family:inherit;
+  }
+  .save-btn:hover { background:rgba(232,62,140,0.1); border-color:var(--accent); }
+  .save-confirm { color:#4ade80; font-size:0.85rem; margin-top:10px; display:none; }
+  .sos-btn {
+    width:140px; height:140px; border-radius:50%;
+    background: radial-gradient(circle, #ff1744, #c2185b);
+    border:4px solid rgba(255,23,68,0.3);
+    color:#fff; font-size:1.5rem; font-weight:900;
+    cursor:pointer; margin:30px auto; display:flex;
+    flex-direction:column; align-items:center; justify-content:center;
+    box-shadow: 0 0 0 0 rgba(255,23,68,0.4);
+    animation: pulse 2.5s infinite;
+    transition:transform 0.1s;
+    user-select:none;
+  }
+  .sos-btn span { font-size:0.7rem; font-weight:600; margin-top:2px; opacity:0.8; }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255,23,68,0.4); }
+    70% { box-shadow: 0 0 0 24px rgba(255,23,68,0); }
+    100% { box-shadow: 0 0 0 0 rgba(255,23,68,0); }
+  }
+  .sos-features {
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+    gap:10px; margin-top:24px;
+  }
+  .sos-feat {
+    background:var(--bg3); border:1px solid var(--border);
+    border-radius:10px; padding:12px; font-size:0.78rem;
+    color:var(--muted); text-align:center;
+  }
+  .sos-feat strong { display:block; color:var(--text); font-size:0.85rem; margin-bottom:2px; }
+  #gps-status { color:var(--accent3); font-size:0.85rem; margin-top:12px; }
+
+  /* ── PREVENTIVE TABS ── */
+  .tabs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; }
+  .tab {
+    padding:8px 18px; border-radius:99px;
+    background:var(--card); border:1px solid var(--border);
+    color:var(--muted); font-size:0.82rem; font-weight:500;
+    cursor:pointer; transition:all 0.2s;
+  }
+  .tab.active, .tab:hover { background:rgba(232,62,140,0.12); border-color:var(--accent); color:var(--text); }
+  .preventive-content { display:none; }
+  .preventive-content.active { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; }
+  .prev-card {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:var(--radius); padding:20px;
+    transition:border-color 0.2s;
+  }
+  .prev-card:hover { border-color:var(--accent2); }
+  .prev-card-icon { font-size:1.6rem; margin-bottom:10px; }
+  .prev-card h4 { font-size:0.95rem; font-weight:600; margin-bottom:6px; }
+  .prev-card ul { padding-left:18px; }
+  .prev-card ul li { font-size:0.82rem; color:var(--muted); margin-bottom:4px; }
+
+  /* ── TIPS ── */
+  .tips-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; }
+  .tip-card {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:var(--radius); padding:22px;
+    display:flex; gap:16px; align-items:flex-start;
+  }
+  .tip-num {
+    font-family:'Playfair Display',serif;
+    font-size:1.8rem; font-weight:900;
+    color:rgba(232,62,140,0.2); line-height:1; min-width:36px;
+  }
+  .tip-icon { font-size:1.5rem; min-width:32px; }
+  .tip-title { font-weight:600; font-size:0.95rem; margin-bottom:4px; }
+  .tip-desc { font-size:0.82rem; color:var(--muted); }
+
+  /* ── DISTRICTS ── */
+  .district-search { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:24px; }
+  .district-search input {
+    flex:1; min-width:200px; padding:12px 16px; border-radius:10px;
+    background:var(--bg3); border:1px solid var(--border);
+    color:var(--text); font-size:0.9rem; font-family:inherit;
+  }
+  .district-search input:focus { outline:none; border-color:var(--accent3); }
+  .district-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+  .dtab {
+    padding:6px 14px; border-radius:99px; cursor:pointer;
+    background:var(--card); border:1px solid var(--border);
+    color:var(--muted); font-size:0.78rem; transition:all 0.2s;
+  }
+  .dtab.active { background:rgba(6,182,212,0.12); border-color:var(--accent3); color:var(--text); }
+  .districts-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:14px; }
+  .district-card {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:var(--radius); padding:18px;
+    transition:border-color 0.2s;
+  }
+  .district-card:hover { border-color:var(--accent3); }
+  .district-card h4 { font-weight:700; font-size:1rem; margin-bottom:8px; }
+  .district-card p { font-size:0.8rem; color:var(--muted); margin-bottom:4px; }
+  .district-card a { color:var(--accent3); text-decoration:none; font-weight:600; }
+  .no-result { color:var(--muted); font-style:italic; }
+
+  /* ── SELF DEFENSE ── */
+  .sd-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; }
+  .sd-card {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:var(--radius); padding:22px;
+    transition:border-color 0.2s;
+  }
+  .sd-card:hover { border-color:var(--gold); }
+  .sd-icon { font-size:1.8rem; margin-bottom:10px; }
+  .sd-level {
+    display:inline-block; font-size:0.72rem; font-weight:700;
+    background:rgba(251,191,36,0.12); border:1px solid rgba(251,191,36,0.25);
+    color:var(--gold); padding:2px 10px; border-radius:99px;
+    margin-bottom:12px;
+  }
+  .sd-card h4 { font-weight:700; font-size:1rem; margin-bottom:10px; }
+  .sd-card ol { padding-left:18px; }
+  .sd-card ol li { font-size:0.82rem; color:var(--muted); margin-bottom:5px; }
+
+  /* ── RIGHTS ── */
+  .rights-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:16px; }
+  .right-card {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:var(--radius); padding:22px;
+    border-left:3px solid var(--accent);
+  }
+  .right-tag {
+    font-size:0.72rem; font-weight:700; text-transform:uppercase;
+    letter-spacing:0.1em; color:var(--accent2); margin-bottom:8px;
+  }
+  .right-card h4 { font-weight:700; margin-bottom:8px; }
+  .right-card p { font-size:0.83rem; color:var(--muted); margin-bottom:10px; }
+  .right-law { font-size:0.75rem; color:var(--accent3); font-style:italic; }
+
+  /* ── PREDICTOR ── */
+  #predictor { background:var(--bg2); border-radius:24px; padding:50px 24px; margin:0 24px; }
+  .predictor-inner { max-width:640px; margin:0 auto; }
+  .pred-form { display:grid; gap:16px; margin:30px 0; }
+  .pred-form input, .pred-form select {
+    padding:12px 16px; border-radius:10px;
+    background:var(--bg3); border:1px solid var(--border);
+    color:var(--text); font-size:0.9rem; font-family:inherit;
+  }
+  .pred-form select option { background:var(--bg); }
+  .pred-form input:focus, .pred-form select:focus { outline:none; border-color:var(--accent); }
+  .pred-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .pred-btn {
+    padding:14px; border-radius:12px;
+    background:linear-gradient(135deg,var(--accent),#c2185b);
+    color:#fff; border:none; font-weight:700; cursor:pointer;
+    font-size:0.95rem; font-family:inherit;
+    box-shadow:0 4px 24px rgba(232,62,140,0.3);
+    transition:transform 0.2s;
+  }
+  .pred-btn:hover { transform:translateY(-2px); }
+  .score-display {
+    text-align:center; padding:30px;
+    background:var(--bg3); border-radius:16px;
+    border:1px solid var(--border); display:none;
+  }
+  .score-num {
+    font-family:'Playfair Display',serif;
+    font-size:4rem; font-weight:900;
+  }
+  .score-label { color:var(--muted); font-size:0.9rem; }
+  .score-tips { margin-top:20px; text-align:left; }
+  .score-tips li { font-size:0.83rem; color:var(--muted); margin-bottom:6px; padding-left:4px; }
+
+  /* ── CHARTS ── */
+  .chart-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; }
+  .chart-tab {
+    padding:8px 18px; border-radius:99px; cursor:pointer;
+    background:var(--card); border:1px solid var(--border);
+    color:var(--muted); font-size:0.82rem; transition:all 0.2s;
+  }
+  .chart-tab.active { background:rgba(232,62,140,0.12); border-color:var(--accent); color:var(--text); }
+  .chart-view { display:none; }
+  .chart-view.active { display:block; }
+  .chart-stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-bottom:24px; }
+  .stat-card {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:var(--radius); padding:18px; text-align:center;
+  }
+  .stat-label { font-size:0.75rem; color:var(--muted); margin-bottom:4px; }
+  .stat-val { font-size:1.8rem; font-weight:700; color:var(--accent); }
+  .stat-sub { font-size:0.72rem; color:var(--muted); }
+  .bar-chart { display:grid; gap:10px; }
+  .bar-row { display:grid; grid-template-columns:110px 1fr 50px; align-items:center; gap:10px; }
+  .bar-district { font-size:0.78rem; color:var(--muted); }
+  .bar-track { background:rgba(255,255,255,0.05); border-radius:99px; height:10px; overflow:hidden; }
+  .bar-fill { height:100%; border-radius:99px; background:linear-gradient(90deg,var(--accent),var(--accent2)); transition:width 0.8s; }
+  .bar-val { font-size:0.78rem; color:var(--muted); text-align:right; }
+  .safety-index { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:12px; }
+  .si-card {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:var(--radius); padding:16px; text-align:center;
+  }
+  .si-score { font-size:1.6rem; font-weight:700; margin:6px 0; }
+  .si-name { font-size:0.8rem; color:var(--muted); }
+  .pie-legend { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+  .pie-item { display:flex; align-items:center; gap:6px; font-size:0.8rem; }
+  .pie-dot { width:10px; height:10px; border-radius:50%; }
+  .trend-chart { display:grid; gap:8px; }
+  .trend-row { display:grid; grid-template-columns:50px 1fr 70px; align-items:center; gap:10px; }
+  .trend-year { font-size:0.78rem; color:var(--muted); }
+  .trend-bar { background:rgba(255,255,255,0.05); border-radius:99px; height:8px; overflow:hidden; }
+  .trend-fill { height:100%; border-radius:99px; background:linear-gradient(90deg,var(--accent3),var(--accent)); }
+  .trend-val { font-size:0.78rem; text-align:right; }
+  .trend-val.down { color:#4ade80; }
+  .trend-val.up { color:#f87171; }
+
+  /* ── REPORT ── */
+  .report-form { display:grid; gap:16px; max-width:680px; }
+  .report-form input, .report-form select, .report-form textarea {
+    width:100%; padding:12px 16px; border-radius:10px;
+    background:var(--bg3); border:1px solid var(--border);
+    color:var(--text); font-size:0.9rem; font-family:inherit;
+    transition:border-color 0.2s;
+  }
+  .report-form textarea { min-height:120px; resize:vertical; }
+  .report-form input:focus, .report-form select:focus, .report-form textarea:focus {
+    outline:none; border-color:var(--accent);
+  }
+  .report-form select option { background:var(--bg); }
+  .report-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .anon-note { font-size:0.8rem; color:var(--muted); }
+  .submit-btn {
+    padding:14px 32px; border-radius:12px;
+    background:linear-gradient(135deg,var(--accent),#c2185b);
+    color:#fff; border:none; font-weight:700; cursor:pointer;
+    font-size:0.95rem; font-family:inherit;
+    transition:transform 0.2s;
+  }
+  .submit-btn:hover { transform:translateY(-2px); }
+  .submit-confirm { color:#4ade80; font-size:0.88rem; margin-top:10px; display:none; }
+
+  /* ── FOOTER ── */
+  footer {
+    background:var(--bg2);
+    border-top:1px solid var(--border);
+    padding:40px 24px;
+    text-align:center;
+  }
+  .footer-brand {
+    font-family:'Playfair Display',serif;
+    font-size:1.5rem; font-weight:900; color:var(--accent);
+    margin-bottom:8px;
+  }
+  .footer-sub { color:var(--muted); font-size:0.85rem; margin-bottom:24px; }
+  .footer-nums { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-bottom:24px; }
+  .footer-num {
+    background:var(--card); border:1px solid var(--border);
+    border-radius:10px; padding:8px 16px;
+    font-size:0.82rem; color:var(--muted);
+  }
+  .footer-num strong { color:var(--accent); }
+  .footer-copy { font-size:0.75rem; color:rgba(148,163,184,0.5); }
+
+  /* ── UTIL ── */
+  .divider { border:none; border-top:1px solid var(--border); margin:0; }
+  @media(max-width:600px) {
+    .report-row, .pred-row { grid-template-columns:1fr; }
+    .bar-row { grid-template-columns:80px 1fr 40px; }
+    nav { gap:4px; }
+    nav a { font-size:0.72rem; padding:4px 8px; }
+  }
 </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <div class="logo">🛡️ ShieldHer MP</div>
-  <ul class="nav-links">
-    <li><a href="#predictor">🔥 Safety Score</a></li>
-    <li><a href="#charts">📊 Charts</a></li>
-    <li><a href="#helplines">Helplines</a></li>
-    <li><a href="#sos">SOS</a></li>
-    <li><a href="#preventive">Preventive</a></li>
-    <li><a href="#tips">Tips</a></li>
-    <li><a href="#nearby">MP Locations</a></li>
-    <li><a href="#selfdefense">Self Defense</a></li>
-    <li><a href="#rights">Rights</a></li>
-    <li><a href="#report">Report</a></li>
-  </ul>
-  <button class="sos-nav" onclick="document.getElementById('sos').scrollIntoView({behavior:'smooth'})">🆘 SOS</button>
+  <div class="nav-brand">🛡️ ShieldHer-22 HP</div>
+  <a href="#predictor">🔥 Safety Score</a>
+  <a href="#charts">📊 Charts</a>
+  <a href="#helplines">Helplines</a>
+  <a href="#sos">SOS</a>
+  <a href="#preventive">Preventive</a>
+  <a href="#tips">Tips</a>
+  <a href="#nearby">HP Locations</a>
+  <a href="#selfdefense">Self Defense</a>
+  <a href="#rights">Rights</a>
+  <a href="#report">Report</a>
 </nav>
 
 <!-- HERO -->
-<section id="home">
-  <div class="hero-bg"></div>
-  <div class="floating-shapes"><div class="shape"></div><div class="shape"></div><div class="shape"></div><div class="shape"></div></div>
-  <div class="hero-badge">🛡️ Women Safety Portal — Madhya Pradesh, India</div>
-  <h1 class="hero-title">You Are Never<br/><span>Alone. Ever.</span></h1>
-  <p class="hero-sub">ShieldHer is Madhya Pradesh's complete women safety companion — real GPS SOS alerts to parents &amp; police, 25+ helplines, MP district locations, preventive measures, legal rights and more.</p>
-  <div class="hero-ctas">
+<div class="hero">
+  <div class="hero-badge">🏔️ Himachal Pradesh Women Safety Portal</div>
+  <h1>You Are <span>Never Alone.</span> Ever.</h1>
+  <p>ShieldHer-22 is Himachal Pradesh's complete women safety companion — real GPS SOS alerts, 25+ helplines, HP district locations, preventive measures, legal rights and more.</p>
+  <div class="hero-btns">
     <a href="#sos" class="btn-primary">🆘 Activate SOS Now</a>
-    <a href="#helplines" class="btn-outline">📞 All Helplines</a>
+    <a href="#helplines" class="btn-secondary">📞 All Helplines</a>
   </div>
-</section>
-
-<!-- QUICK STRIP -->
-<div class="helpline-strip">
-  <div class="helpline-item"><div class="num">112</div><div class="label">National Emergency</div></div>
-  <div class="helpline-item"><div class="num">1091</div><div class="label">Women Helpline</div></div>
-  <div class="helpline-item"><div class="num">100</div><div class="label">MP Police</div></div>
-  <div class="helpline-item"><div class="num">181</div><div class="label">Mahila Helpline</div></div>
-  <div class="helpline-item"><div class="num">1090</div><div class="label">MP Women Power</div></div>
-  <div class="helpline-item"><div class="num">1930</div><div class="label">Cyber Crime</div></div>
-  <div class="helpline-item"><div class="num">15100</div><div class="label">Free Legal Aid</div></div>
 </div>
 
-<!-- ══════════ 1. HELPLINES ══════════ -->
+<!-- QUICK NUMBERS -->
+<div class="quick-numbers">
+  <div class="qn"><div class="qn-num">112</div><div class="qn-label">National Emergency</div></div>
+  <div class="qn"><div class="qn-num">1091</div><div class="qn-label">Women Helpline</div></div>
+  <div class="qn"><div class="qn-num">100</div><div class="qn-label">HP Police</div></div>
+  <div class="qn"><div class="qn-num">181</div><div class="qn-label">Mahila Helpline</div></div>
+  <div class="qn"><div class="qn-num">1930</div><div class="qn-label">Cyber Crime</div></div>
+  <div class="qn"><div class="qn-num">15100</div><div class="qn-label">Free Legal Aid</div></div>
+</div>
+
+<hr class="divider">
+
+<!-- HELPLINES -->
 <section id="helplines">
-  <div class="section-tag" style="background:rgba(255,61,139,.15);color:var(--pink);">📞 Emergency Contacts</div>
-  <h2 class="section-title">All Important <span style="color:var(--pink)">Helpline Numbers</span></h2>
+  <div class="section-tag">📞 Emergency Contacts</div>
+  <h2>All Important Helpline Numbers</h2>
   <p class="section-sub">Every number listed is active 24×7. Know what each number does — call the right one at the right time.</p>
 
-  <div class="helplines-category reveal">
-    <div class="category-title" style="color:var(--pink);">🚨 National Emergency Numbers</div>
+  <div class="helpline-group">
+    <div class="helpline-group-title">🚨 National Emergency Numbers</div>
     <div class="helplines-grid">
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(255,61,139,.2);">🆘</div><div><div class="hc-name">National Emergency — Single Number</div><div class="hc-number" style="color:var(--pink);">112</div><div class="hc-desc">India's unified emergency number connecting Police, Fire Brigade and Ambulance simultaneously. Works without a SIM card or balance. Your GPS location is automatically shared with the dispatch centre the moment you call.</div><div class="hc-badge" style="background:rgba(255,61,139,.15);color:var(--pink);">24×7 • Free • No SIM Needed • GPS Auto-Share</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(124,58,237,.2);">🚔</div><div><div class="hc-name">Police Control Room</div><div class="hc-number" style="color:var(--purple);">100</div><div class="hc-desc">Direct line to the nearest police control room. Use for reporting crimes in progress, threats, suspicious persons, or any situation requiring immediate law enforcement. Officers are dispatched within minutes.</div><div class="hc-badge" style="background:rgba(124,58,237,.15);color:var(--purple);">24×7 • Immediate Dispatch</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(0,230,118,.2);">🚑</div><div><div class="hc-name">Ambulance / Medical Emergency</div><div class="hc-number" style="color:var(--green);">102</div><div class="hc-desc">Free ambulance service for accidents, assault injuries, and pregnancy emergencies. Provides transport to the nearest government hospital at zero cost. Also covers AYUSH and trauma cases.</div><div class="hc-badge" style="background:rgba(0,230,118,.15);color:var(--green);">Free • 24×7 • Trauma & Pregnancy</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(255,214,0,.2);">🚒</div><div><div class="hc-name">Fire Brigade & Rescue</div><div class="hc-number" style="color:var(--yellow);">101</div><div class="hc-desc">Fire emergencies, building collapses, gas leaks, and rescue operations. Fire teams also assist in road accident rescues when victims are trapped. Available across all MP districts.</div><div class="hc-badge" style="background:rgba(255,214,0,.15);color:var(--yellow);">24×7 • All MP Districts</div></div></div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🆘</div>
+        <div>
+          <div class="helpline-name">National Emergency — Single Number</div>
+          <div class="helpline-num"><a href="tel:112">112</a></div>
+          <div class="helpline-desc">India's unified emergency number connecting Police, Fire and Ambulance. Works without SIM or balance. GPS auto-shared with dispatch on call.</div>
+          <span class="helpline-badge">24×7</span><span class="helpline-badge">Free</span><span class="helpline-badge">No SIM Needed</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🚔</div>
+        <div>
+          <div class="helpline-name">HP Police Control Room</div>
+          <div class="helpline-num"><a href="tel:100">100</a></div>
+          <div class="helpline-desc">Direct line to Himachal Pradesh Police. Use for crimes in progress, threats, suspicious persons, or any immediate law enforcement need.</div>
+          <span class="helpline-badge">24×7</span><span class="helpline-badge">Immediate Dispatch</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🚑</div>
+        <div>
+          <div class="helpline-name">Ambulance / Medical Emergency</div>
+          <div class="helpline-num"><a href="tel:102">102</a></div>
+          <div class="helpline-desc">Free ambulance service across HP for accidents, assault injuries, and pregnancy emergencies. Available in all 12 districts.</div>
+          <span class="helpline-badge">Free</span><span class="helpline-badge">24×7</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🚒</div>
+        <div>
+          <div class="helpline-name">Fire Brigade & Rescue</div>
+          <div class="helpline-num"><a href="tel:101">101</a></div>
+          <div class="helpline-desc">Fire emergencies, building collapses, gas leaks, and rescue operations across all HP districts including remote mountain areas.</div>
+          <span class="helpline-badge">24×7</span><span class="helpline-badge">All HP Districts</span>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="helplines-category reveal">
-    <div class="category-title" style="color:var(--teal);">👩 Women-Specific Helplines</div>
+  <div class="helpline-group">
+    <div class="helpline-group-title">👩 Women-Specific Helplines</div>
     <div class="helplines-grid">
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(0,188,212,.2);">👩</div><div><div class="hc-name">Women Helpline — National</div><div class="hc-number" style="color:var(--teal);">1091</div><div class="hc-desc">Dedicated national helpline for women in distress. Handles harassment, stalking, sexual assault, domestic abuse, and trafficking. Connects directly to local police for immediate action. Strictly confidential.</div><div class="hc-badge" style="background:rgba(0,188,212,.15);color:var(--teal);">24×7 • Pan-India • Confidential</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(255,112,67,.2);">🏠</div><div><div class="hc-name">Mahila Helpline — Domestic Violence</div><div class="hc-number" style="color:var(--orange);">181</div><div class="hc-desc">Specifically for domestic violence survivors. Provides counselling, connects to Sakhi shelter homes, legal aid, and medical support. Run by MP Women &amp; Child Development Department. Free and confidential.</div><div class="hc-badge" style="background:rgba(255,112,67,.15);color:var(--orange);">Free Shelter • Counselling • MP Operated</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(0,230,118,.2);">🛡️</div><div><div class="hc-name">MP Women Power Helpline</div><div class="hc-number" style="color:var(--green);">1090</div><div class="hc-desc">Madhya Pradesh exclusive helpline for eve-teasing, harassment, and stalking. MP Police responds quickly and takes strict action against offenders. Your identity is kept completely confidential — even from the accused.</div><div class="hc-badge" style="background:rgba(0,230,118,.15);color:var(--green);">MP Exclusive • Anonymous • Strict Action</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(124,58,237,.2);">⚖️</div><div><div class="hc-name">NCW — National Commission for Women</div><div class="hc-number" style="color:var(--purple);">7827-170-170</div><div class="hc-desc">File complaints against sexual harassment, workplace discrimination, dowry harassment, and trafficking. NCW investigates cases and takes action against authorities who fail to help women. Can escalate to court.</div><div class="hc-badge" style="background:rgba(124,58,237,.15);color:var(--purple);">Legal Complaints • High Authority</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(255,61,139,.2);">💜</div><div><div class="hc-name">Sakhi One Stop Centre (MP)</div><div class="hc-number" style="color:var(--pink);">181</div><div class="hc-desc">Government-run centres in every MP district providing integrated support — medical aid, police assistance, legal help, counselling, and shelter under one roof. Available in Bhopal, Indore, Gwalior, Jabalpur, Ujjain.</div><div class="hc-badge" style="background:rgba(255,61,139,.15);color:var(--pink);">All MP Districts • Integrated Support</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(255,214,0,.2);">🏥</div><div><div class="hc-name">AIIMS Bhopal Emergency</div><div class="hc-number" style="color:var(--yellow);">0755-2672335</div><div class="hc-desc">AIIMS Bhopal 24×7 emergency for trauma, sexual assault medical care, and critical injuries. Provides free forensic medical examination (Medico-Legal Case) to assault survivors. No police complaint required to access care.</div><div class="hc-badge" style="background:rgba(255,214,0,.15);color:var(--yellow);">Bhopal • Free MLC Exam • No Police Required</div></div></div>
+      <div class="helpline-card">
+        <div class="helpline-icon">👩</div>
+        <div>
+          <div class="helpline-name">Women Helpline — National</div>
+          <div class="helpline-num"><a href="tel:1091">1091</a></div>
+          <div class="helpline-desc">Dedicated national helpline for women in distress. Handles harassment, stalking, sexual assault, domestic abuse, and trafficking. Strictly confidential.</div>
+          <span class="helpline-badge">24×7</span><span class="helpline-badge">Pan-India</span><span class="helpline-badge">Confidential</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🏠</div>
+        <div>
+          <div class="helpline-name">Mahila Helpline — Domestic Violence</div>
+          <div class="helpline-num"><a href="tel:181">181</a></div>
+          <div class="helpline-desc">For domestic violence survivors in HP. Provides counselling, connects to Sakhi shelter homes in Shimla, Dharamshala, Mandi, Solan, and Kullu.</div>
+          <span class="helpline-badge">Free Shelter</span><span class="helpline-badge">HP Operated</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🛡️</div>
+        <div>
+          <div class="helpline-name">HP Women Safety Helpline</div>
+          <div class="helpline-num"><a href="tel:1515">1515</a></div>
+          <div class="helpline-desc">Himachal Pradesh-specific helpline for eve-teasing, harassment, and stalking. HP Police responds quickly; identity kept completely confidential.</div>
+          <span class="helpline-badge">HP Exclusive</span><span class="helpline-badge">Anonymous</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">⚖️</div>
+        <div>
+          <div class="helpline-name">NCW — National Commission for Women</div>
+          <div class="helpline-num"><a href="tel:7827170170">7827-170-170</a></div>
+          <div class="helpline-desc">File complaints against sexual harassment, workplace discrimination, dowry harassment, and trafficking. NCW investigates and can escalate to court.</div>
+          <span class="helpline-badge">Legal Complaints</span><span class="helpline-badge">High Authority</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">💜</div>
+        <div>
+          <div class="helpline-name">Sakhi One Stop Centre (HP)</div>
+          <div class="helpline-num"><a href="tel:181">181</a></div>
+          <div class="helpline-desc">Government-run centres in HP districts providing integrated support — medical aid, police, legal help, counselling, and shelter under one roof.</div>
+          <span class="helpline-badge">Shimla</span><span class="helpline-badge">Dharamshala</span><span class="helpline-badge">Mandi</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🏥</div>
+        <div>
+          <div class="helpline-name">IGMC Shimla Emergency</div>
+          <div class="helpline-num"><a href="tel:01772658282">0177-2658282</a></div>
+          <div class="helpline-desc">Indira Gandhi Medical College, Shimla — 24×7 emergency for trauma and assault medical care. Provides free Medico-Legal Case exam; no police complaint required.</div>
+          <span class="helpline-badge">Shimla</span><span class="helpline-badge">Free MLC Exam</span>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="helplines-category reveal">
-    <div class="category-title" style="color:var(--purple);">🧠 Mental Health & Counselling</div>
+  <div class="helpline-group">
+    <div class="helpline-group-title">🧠 Mental Health & Counselling</div>
     <div class="helplines-grid">
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(124,58,237,.2);">🧠</div><div><div class="hc-name">iCall — Psychological Support</div><div class="hc-number" style="color:var(--purple);">9152987821</div><div class="hc-desc">Free psychological counselling by trained mental health professionals from TISS. For trauma survivors, domestic violence aftermath, depression, anxiety, or suicidal thoughts. Completely confidential. Hindi and English.</div><div class="hc-badge" style="background:rgba(124,58,237,.15);color:var(--purple);">Mon–Sat 8AM–10PM • Free • Confidential</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(0,188,212,.2);">💚</div><div><div class="hc-name">Vandrevala Foundation</div><div class="hc-number" style="color:var(--teal);">1860-2662-345</div><div class="hc-desc">24×7 mental health crisis helpline and counselling. Confidential support for trauma, panic attacks, grief, emotional distress, and crisis situations. Available in Hindi, English, and regional languages.</div><div class="hc-badge" style="background:rgba(0,188,212,.15);color:var(--teal);">24×7 • Hindi & English • Free</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(255,61,139,.2);">🌸</div><div><div class="hc-name">Snehi — Emotional Support</div><div class="hc-number" style="color:var(--pink);">044-24640050</div><div class="hc-desc">Crisis counselling for those in extreme emotional distress. Non-judgmental and strictly confidential. Especially helpful for those facing suicidal thoughts after trauma or violence. No personal information required.</div><div class="hc-badge" style="background:rgba(255,61,139,.15);color:var(--pink);">Crisis Support • No Info Required</div></div></div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🧠</div>
+        <div>
+          <div class="helpline-name">iCall — Psychological Support</div>
+          <div class="helpline-num"><a href="tel:9152987821">9152987821</a></div>
+          <div class="helpline-desc">Free psychological counselling by TISS professionals. For trauma survivors, domestic violence aftermath, depression, and anxiety. Hindi & English.</div>
+          <span class="helpline-badge">Mon–Sat 8AM–10PM</span><span class="helpline-badge">Free</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">💚</div>
+        <div>
+          <div class="helpline-name">Vandrevala Foundation</div>
+          <div class="helpline-num"><a href="tel:18602662345">1860-2662-345</a></div>
+          <div class="helpline-desc">24×7 mental health crisis helpline. Confidential support for trauma, panic attacks, grief, and crisis situations in Hindi, English, and regional languages.</div>
+          <span class="helpline-badge">24×7</span><span class="helpline-badge">Free</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🌸</div>
+        <div>
+          <div class="helpline-name">Snehi — Emotional Support</div>
+          <div class="helpline-num"><a href="tel:04424640050">044-24640050</a></div>
+          <div class="helpline-desc">Crisis counselling for extreme emotional distress. Non-judgmental, confidential. No personal information required to call.</div>
+          <span class="helpline-badge">Crisis Support</span><span class="helpline-badge">Anonymous</span>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="helplines-category reveal">
-    <div class="category-title" style="color:var(--orange);">💻 Cyber Crime & Child Safety</div>
+  <div class="helpline-group">
+    <div class="helpline-group-title">💻 Cyber Crime & Child Safety</div>
     <div class="helplines-grid">
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(0,188,212,.2);">💻</div><div><div class="hc-name">Cyber Crime Helpline</div><div class="hc-number" style="color:var(--teal);">1930</div><div class="hc-desc">Report online fraud, cyber stalking, morphed photos/videos, sextortion, blackmail, non-consensual image sharing, and fake accounts. First responders must act within 24 hours. Also report at cybercrime.gov.in.</div><div class="hc-badge" style="background:rgba(0,188,212,.15);color:var(--teal);">24×7 • Online Also: cybercrime.gov.in</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(255,112,67,.2);">👧</div><div><div class="hc-name">Childline India</div><div class="hc-number" style="color:var(--orange);">1098</div><div class="hc-desc">For children under 18 in distress — abuse, exploitation, trafficking, and abandonment. Adults can call on behalf of a child in danger. Active in all MP districts. Connects to child protection officers immediately.</div><div class="hc-badge" style="background:rgba(255,112,67,.15);color:var(--orange);">24×7 • Under-18 Protection • All MP</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(124,58,237,.2);">⚖️</div><div><div class="hc-name">Free Legal Aid — NALSA</div><div class="hc-number" style="color:var(--purple);">15100</div><div class="hc-desc">Free legal services for women — advocate, court fees, and documentation — from District Legal Services Authority. Covers FIR filing, domestic violence, sexual assault, dowry harassment, and workplace cases.</div><div class="hc-badge" style="background:rgba(124,58,237,.15);color:var(--purple);">Free Lawyers • All MP Districts</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(255,61,139,.2);">🚨</div><div><div class="hc-name">Anti-Human Trafficking — MHA</div><div class="hc-number" style="color:var(--pink);">1800-419-8588</div><div class="hc-desc">Report human trafficking, forced labour, sex trafficking, and forced marriage. Run by Ministry of Home Affairs. Anonymous reporting accepted. Operates across all states including MP border districts.</div><div class="hc-badge" style="background:rgba(255,61,139,.15);color:var(--pink);">Anonymous • MHA Operated • Free</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(0,230,118,.2);">🚆</div><div><div class="hc-name">Railway Protection Force</div><div class="hc-number" style="color:var(--green);">182</div><div class="hc-desc">Call if you face harassment, stalking, or any threat on a train or railway platform. RPF personnel are present at all major MP stations — Bhopal, Indore, Jabalpur, Gwalior, Ujjain. Free and immediate response.</div><div class="hc-badge" style="background:rgba(0,230,118,.15);color:var(--green);">All MP Stations • 24×7 • Free</div></div></div>
-      <div class="helpline-card"><div class="hc-icon" style="background:rgba(255,214,0,.2);">🩺</div><div><div class="hc-name">MP Health Helpline</div><div class="hc-number" style="color:var(--yellow);">104</div><div class="hc-desc">MP Government's health helpline providing medical advice, ambulance coordination, and mental health support. Also provides guidance on accessing free government health services across Madhya Pradesh.</div><div class="hc-badge" style="background:rgba(255,214,0,.15);color:var(--yellow);">MP Exclusive • Health & Mental Health</div></div></div>
+      <div class="helpline-card">
+        <div class="helpline-icon">💻</div>
+        <div>
+          <div class="helpline-name">Cyber Crime Helpline</div>
+          <div class="helpline-num"><a href="tel:1930">1930</a></div>
+          <div class="helpline-desc">Report cyber stalking, morphed photos, sextortion, blackmail, and non-consensual image sharing. Also report at cybercrime.gov.in.</div>
+          <span class="helpline-badge">24×7</span><span class="helpline-badge">cybercrime.gov.in</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">👧</div>
+        <div>
+          <div class="helpline-name">Childline India</div>
+          <div class="helpline-num"><a href="tel:1098">1098</a></div>
+          <div class="helpline-desc">For children under 18 in distress — abuse, exploitation, trafficking. Active in all HP districts. Connects to child protection officers immediately.</div>
+          <span class="helpline-badge">24×7</span><span class="helpline-badge">Under-18</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">⚖️</div>
+        <div>
+          <div class="helpline-name">Free Legal Aid — NALSA</div>
+          <div class="helpline-num"><a href="tel:15100">15100</a></div>
+          <div class="helpline-desc">Free legal services for women — advocate, court fees, and documentation from District Legal Services Authority across all HP districts.</div>
+          <span class="helpline-badge">Free Lawyers</span><span class="helpline-badge">All HP Districts</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🚆</div>
+        <div>
+          <div class="helpline-name">Railway Protection Force</div>
+          <div class="helpline-num"><a href="tel:182">182</a></div>
+          <div class="helpline-desc">Call if harassed on a train or railway platform. RPF present at major HP stations — Shimla, Kalka, Una, Pathankot Road, Jogindernagar.</div>
+          <span class="helpline-badge">All HP Stations</span><span class="helpline-badge">24×7</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🩺</div>
+        <div>
+          <div class="helpline-name">HP Health Helpline</div>
+          <div class="helpline-num"><a href="tel:104">104</a></div>
+          <div class="helpline-desc">HP Government's health helpline providing medical advice, ambulance coordination, and mental health support across Himachal Pradesh.</div>
+          <span class="helpline-badge">HP Exclusive</span><span class="helpline-badge">Health & Mental Health</span>
+        </div>
+      </div>
+      <div class="helpline-card">
+        <div class="helpline-icon">🚨</div>
+        <div>
+          <div class="helpline-name">Anti-Human Trafficking — MHA</div>
+          <div class="helpline-num"><a href="tel:18004198588">1800-419-8588</a></div>
+          <div class="helpline-desc">Report trafficking, forced labour, and forced marriage. Run by Ministry of Home Affairs. Anonymous reporting accepted across all states including HP.</div>
+          <span class="helpline-badge">Anonymous</span><span class="helpline-badge">MHA Operated</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════ 2. SOS ══════════ -->
-<section id="sos">
-  <div class="section-tag" style="background:rgba(255,61,139,.15);color:var(--pink);">🆘 Emergency Alert</div>
-  <h2 class="section-title">Real-Time <span style="color:var(--pink)">SOS System</span></h2>
-  <p class="section-sub" style="margin:0 auto 28px;text-align:center;max-width:560px;">Set your emergency contacts below. When SOS is activated, your live GPS coordinates are sent via WhatsApp to your parent and police is auto-dialled.</p>
+<hr class="divider">
 
-  <div class="sos-setup-panel reveal">
-    <div class="sos-setup-title">⚙️ Setup Emergency Contacts — Do This Before Using SOS</div>
-    <input class="sos-input" id="parent-name" type="text" placeholder="Parent / Guardian Full Name"/>
-    <input class="sos-input" id="parent-phone" type="tel" placeholder="Parent WhatsApp Number (91XXXXXXXXXX)"/>
-    <input class="sos-input" id="contact2-name" type="text" placeholder="2nd Emergency Contact Name (Optional)"/>
-    <input class="sos-input" id="contact2-phone" type="tel" placeholder="2nd Contact WhatsApp Number (Optional)"/>
-    <button class="sos-save-btn" onclick="saveContacts()">✅ Save Contacts — Activate SOS</button>
-    <div class="sos-saved-msg" id="sos-saved">✔ Contacts saved! SOS is ready. GPS will be shared automatically on hold.</div>
+<!-- SOS -->
+<div id="sos" style="padding:60px 0;">
+  <section style="padding:0 0 30px;">
+    <div class="section-tag">🆘 Emergency Alert</div>
+    <h2>Real-Time SOS System</h2>
+    <p class="section-sub">Set your emergency contacts. When SOS is activated, your live GPS coordinates are sent via WhatsApp and police is auto-dialled.</p>
+  </section>
+  <div style="background:var(--bg2);border-radius:24px;padding:50px 24px;margin:0 24px;">
+    <div class="sos-inner">
+      <h3 style="margin-bottom:6px;">⚙️ Setup Emergency Contacts</h3>
+      <p style="color:var(--muted);font-size:0.85rem;margin-bottom:20px;">Do this before using SOS</p>
+      <div class="sos-inputs">
+        <div>
+          <label>Parent / Guardian WhatsApp Number</label>
+          <input type="tel" id="parent-num" placeholder="+91XXXXXXXXXX">
+        </div>
+        <div>
+          <label>Second Emergency Contact</label>
+          <input type="tel" id="contact2" placeholder="+91XXXXXXXXXX">
+        </div>
+        <div>
+          <label>Your Name (for alert message)</label>
+          <input type="text" id="your-name" placeholder="Your full name">
+        </div>
+      </div>
+      <button class="save-btn" onclick="saveContacts()">✅ Save Contacts — Activate SOS</button>
+      <div class="save-confirm" id="save-confirm">✔ Contacts saved! SOS is ready. GPS will be shared automatically on hold.</div>
+
+      <button class="sos-btn" id="sos-btn" onmousedown="startSOS()" onmouseup="cancelSOS()" ontouchstart="startSOS()" ontouchend="cancelSOS()">
+        SOS
+        <span>HOLD 3s</span>
+      </button>
+      <p style="color:var(--muted);font-size:0.82rem;">Hold for 3 seconds → sends your GPS to parent + calls 112 HP Police</p>
+      <div id="gps-status">📍 GPS: Detecting...</div>
+
+      <div class="sos-features">
+        <div class="sos-feat"><strong>📍 Live GPS</strong>Coordinates captured</div>
+        <div class="sos-feat"><strong>📲 WhatsApp</strong>Alert to parent</div>
+        <div class="sos-feat"><strong>🚔 Auto-dial</strong>112 HP Police</div>
+        <div class="sos-feat"><strong>🗺️ Maps Link</strong>Google Maps shared</div>
+        <div class="sos-feat"><strong>👨‍👩‍👧 2nd Contact</strong>Alerted instantly</div>
+      </div>
+    </div>
   </div>
+</div>
 
-  <div class="sos-ring-wrap reveal">
-    <div class="sos-ring"></div><div class="sos-ring"></div><div class="sos-ring"></div>
-    <button class="sos-btn-main" id="sosBtn"
-      onmousedown="startSOS()" onmouseup="cancelSOS()"
-      ontouchstart="startSOS(event)" ontouchend="cancelSOS()">
-      SOS<br/>HOLD
-    </button>
-  </div>
-  <div id="sos-status">Hold for 3 seconds → sends your GPS to parent + calls police</div>
-  <div class="location-display" id="loc-display">📍 GPS Captured: <span id="loc-text">Detecting...</span></div>
+<hr class="divider">
 
-  <div class="sos-features reveal">
-    <div class="sos-feat"><span>📍</span> Live GPS coordinates</div>
-    <div class="sos-feat"><span>📲</span> WhatsApp alert to parent</div>
-    <div class="sos-feat"><span>🚔</span> Auto-dials 112 Police</div>
-    <div class="sos-feat"><span>🗺️</span> Google Maps link shared</div>
-    <div class="sos-feat"><span>👨‍👩‍👧</span> 2nd contact alerted</div>
-  </div>
-</section>
-
-<!-- ══════════ 3. PREVENTIVE MEASURES ══════════ -->
+<!-- PREVENTIVE -->
 <section id="preventive">
-  <div class="section-tag" style="background:rgba(0,230,118,.15);color:var(--green);">🛡️ Prevention First</div>
-  <h2 class="section-title">Detailed Preventive <span style="color:var(--green)">Measures</span></h2>
-  <p class="section-sub">Prevention is always better than cure. Select a category to see detailed safety measures.</p>
+  <div class="section-tag">🛡️ Prevention First</div>
+  <h2>Detailed Preventive Measures</h2>
+  <p class="section-sub">Prevention is always better than cure. Select a category to see detailed safety measures for Himachal Pradesh.</p>
 
-  <div class="prev-tabs">
-    <button class="prev-tab active" onclick="showPrev('travel',this)">🚌 Travel</button>
-    <button class="prev-tab" onclick="showPrev('digital',this)">💻 Digital Safety</button>
-
-    <button class="prev-tab" onclick="showPrev('night',this)">🌙 Night Safety</button>
-    <button class="prev-tab" onclick="showPrev('home',this)">🏠 Home</button>
-    <button class="prev-tab" onclick="showPrev('workplace',this)">💼 Workplace</button>
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('travel',this)">🚌 Travel</div>
+    <div class="tab" onclick="switchTab('digital',this)">💻 Digital Safety</div>
+    <div class="tab" onclick="switchTab('night',this)">🌙 Night Safety</div>
+    <div class="tab" onclick="switchTab('home',this)">🏠 Home</div>
+    <div class="tab" onclick="switchTab('workplace',this)">💼 Workplace</div>
   </div>
 
-  <div class="prev-panel active" id="prev-travel">
-    <div class="prev-card"><div class="prev-icon">🚕</div><div class="prev-title">Verify Your Cab Before Boarding</div><div class="prev-text">Always check cab number, driver name and photo before getting in.</div><ul class="prev-points"><li>Screenshot the ride details and WhatsApp it to a trusted contact</li><li>Sit behind the driver — never in the front passenger seat</li><li>Share your trip via app's built-in sharing feature</li><li>Cancel and rebook if anything feels off — trust your gut</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">🚌</div><div class="prev-title">Bus & Public Transport in MP</div><div class="prev-text">MP's city buses have women-reserved sections — always use them.</div><ul class="prev-points"><li>Stand near the conductor or driver in an empty bus</li><li>Use women's reserved seating at all times</li><li>Avoid isolated bus stops after 8PM — wait at shops/petrol pumps</li><li>Bhopal City Link buses have women marshals — report to them</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">📍</div><div class="prev-title">Share Live Location Always</div><div class="prev-text">Make it a daily habit — not just when you feel scared.</div><ul class="prev-points"><li>Google Maps "Share Live Location" with parent for every solo trip</li><li>Tell someone your exact route, departure and arrival time</li><li>Have a secret family code word: e.g. "call the doctor" = call police</li><li>Check in every 30 minutes on long journeys</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">🚆</div><div class="prev-title">Train Travel Safety — MP</div><div class="prev-text">All major MP stations (Bhopal, Indore, Jabalpur, Gwalior, Ujjain) have RPF.</div><ul class="prev-points"><li>Book confirmed berths — lower/middle in women-only or general coaches</li><li>Call RPF at 182 immediately if harassed on the train or platform</li><li>Lock your berth chain at night — do not open without verifying</li><li>Prefer IRCTC app booking so your trip is digitally tracked</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">🔋</div><div class="prev-title">Keep Your Phone Emergency-Ready</div><div class="prev-text">A dead phone in an emergency is as dangerous as no phone.</div><ul class="prev-points"><li>Carry a power bank (min 10,000 mAh) every time you go out</li><li>Save emergency contacts as "ICE Mom", "ICE Dad" at top of phonebook</li><li>Enable power-button SOS: press volume down + power 5 times on Android</li><li>Keep mobile data on at all times when travelling alone</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">🛺</div><div class="prev-title">Auto-Rickshaw Safety in MP Cities</div><div class="prev-text">Autos are the most common transport in Bhopal, Indore — stay safe.</div><ul class="prev-points"><li>Note the auto registration number before boarding — screenshot it</li><li>Make a loud fake call stating your destination before sitting</li><li>Prefer autos at official stands or app-based Rapido/Ola autos</li><li>Do not take autos through deserted routes late at night</li></ul></div>
+  <div id="prev-travel" class="preventive-content active">
+    <div class="prev-card">
+      <div class="prev-card-icon">🚕</div>
+      <h4>Verify Your Cab Before Boarding</h4>
+      <ul><li>Screenshot ride details and WhatsApp to trusted contact</li><li>Sit behind the driver — never in the front</li><li>Share trip via app's live tracking feature</li><li>Cancel and rebook if anything feels off</li></ul>
+    </div>
+    <div class="prev-card">
+      <div class="prev-card-icon">🏔️</div>
+      <h4>Mountain Road & Trek Safety in HP</h4>
+      <ul><li>Always register at nearest Forest/Tourism office before trekking</li><li>Carry HP tourist police helpline: 01772-812344</li><li>Inform your hotel/homestay of your planned route</li><li>Avoid isolated mountain paths alone after 5PM</li></ul>
+    </div>
+    <div class="prev-card">
+      <div class="prev-card-icon">📍</div>
+      <h4>Share Live Location Always</h4>
+      <ul><li>Google Maps "Share Live Location" with parent for every solo trip</li><li>Tell someone your exact route and arrival time</li><li>Have a family code word: "call the doctor" = call police</li><li>Check in every 30 minutes on remote HP mountain routes</li></ul>
+    </div>
+    <div class="prev-card">
+      <div class="prev-card-icon">🚌</div>
+      <h4>HRTC Bus Safety in HP</h4>
+      <ul><li>HP roadways buses (HRTC) have women-reserved front seats — use them</li><li>Stand near the conductor on empty routes</li><li>Avoid isolated bus stops after 7PM in hill areas</li><li>Use Shimla City Bus or app-based taxis in Shimla & Dharamshala</li></ul>
+    </div>
+    <div class="prev-card">
+      <div class="prev-card-icon">🔋</div>
+      <h4>Keep Your Phone Emergency-Ready</h4>
+      <ul><li>Carry a power bank (min 10,000 mAh) in HP's remote areas</li><li>Save emergency contacts as "ICE Mom", "ICE Dad"</li><li>Enable power-button SOS: volume down + power 5× on Android</li><li>Note: signal can be weak in interior HP — download offline maps</li></ul>
+    </div>
+    <div class="prev-card">
+      <div class="prev-card-icon">🚌</div>
+      <h4>Auto & Local Transport in HP</h4>
+      <ul><li>Note the vehicle registration before boarding</li><li>Prefer app-based taxis (Ola/Rapido) in Shimla, Dharamshala, Manali</li><li>Avoid isolated routes during snowfall or after dark</li><li>Carry HP Tourist Police number: 01772-812344</li></ul>
+    </div>
   </div>
 
-  <div class="prev-panel" id="prev-digital">
-    <div class="prev-card"><div class="prev-icon">🔒</div><div class="prev-title">Social Media Privacy</div><div class="prev-text">Your online presence can expose you to real-world dangers.</div><ul class="prev-points"><li>Set Instagram, Facebook, and Snapchat to Private</li><li>Never post your daily routine, college timings, or home address</li><li>Turn off location tags on all photos before posting</li><li>Disable "People Nearby" on WhatsApp and dating apps</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">📵</div><div class="prev-title">Protect Against Cyber Stalking</div><div class="prev-text">Block, screenshot, report — always in this order.</div><ul class="prev-points"><li>Screenshot all harassing messages first — then block</li><li>Report to cybercrime.gov.in or call 1930 with screenshots</li><li>Do not engage or respond to harassers — ever</li><li>Use different usernames across different platforms</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">🖼️</div><div class="prev-title">Prevent Photo & Video Misuse</div><div class="prev-text">Non-consensual sharing is a criminal offense under IT Act.</div><ul class="prev-points"><li>Never share intimate photos with anyone — no exceptions</li><li>Check which apps have camera and gallery access — revoke unnecessary ones</li><li>Enable two-step verification on all accounts immediately</li><li>Report morphed images to 1930 — action within 24 hours is mandated</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">💳</div><div class="prev-title">Online Financial Safety</div><div class="prev-text">Cyber fraud often targets women through emotional manipulation.</div><ul class="prev-points"><li>Never share OTP with anyone — even if they claim to be bank, police or government</li><li>Verify job offers and matrimonial profiles carefully before engaging</li><li>No legitimate organization ever asks for money upfront</li><li>Report financial fraud at 1930 immediately — golden hour matters</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">📱</div><div class="prev-title">Install Safety Apps</div><div class="prev-text">These apps can save your life in seconds.</div><ul class="prev-points"><li>Himmat Plus (Delhi Police) — shake to send SOS with GPS</li><li>bSafe — has a fake call feature and follower mode</li><li>Shake2Safety — works even when screen is locked</li><li>MP Police app — direct complaint filing from Madhya Pradesh</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">🧨</div><div class="prev-title">Online Dating & Meeting Safety</div><div class="prev-text">Always verify before meeting someone from online.</div><ul class="prev-points"><li>Video call before first meeting — verify it's a real person</li><li>Always meet for the first time in a public, busy place</li><li>Tell a trusted person your exact meeting location and time</li><li>Never share your home address with someone you just met online</li></ul></div>
+  <div id="prev-digital" class="preventive-content">
+    <div class="prev-card"><div class="prev-card-icon">🔒</div><h4>Social Media Privacy</h4><ul><li>Set Instagram, Facebook to Private</li><li>Never post daily routine, college timings, or home address</li><li>Turn off location tags on all photos</li><li>Disable "People Nearby" on WhatsApp</li></ul></div>
+    <div class="prev-card"><div class="prev-card-icon">📵</div><h4>Protect Against Cyber Stalking</h4><ul><li>Screenshot all harassing messages first — then block</li><li>Report to cybercrime.gov.in or call 1930</li><li>Do not engage or respond to harassers</li><li>Use different usernames across platforms</li></ul></div>
+    <div class="prev-card"><div class="prev-card-icon">🖼️</div><h4>Prevent Photo & Video Misuse</h4><ul><li>Never share intimate photos — no exceptions</li><li>Check which apps have camera/gallery access — revoke unnecessary ones</li><li>Enable two-step verification on all accounts</li><li>Report morphed images to 1930 immediately</li></ul></div>
+    <div class="prev-card"><div class="prev-card-icon">💳</div><h4>Online Financial Safety</h4><ul><li>Never share OTP with anyone</li><li>Verify job offers and matrimonial profiles carefully</li><li>No legitimate organization asks for money upfront</li><li>Report financial fraud at 1930 immediately</li></ul></div>
+    <div class="prev-card"><div class="prev-card-icon">📱</div><h4>Install Safety Apps</h4><ul><li>Himmat Plus (Delhi Police) — shake to send SOS</li><li>bSafe — fake call feature and follower mode</li><li>Shake2Safety — works when screen is locked</li><li>HP Police app — direct complaint filing from Himachal Pradesh</li></ul></div>
   </div>
 
-
-
-  <div class="prev-panel" id="prev-night">
-    <div class="prev-card"><div class="prev-icon">🌙</div><div class="prev-title">Walking Alone at Night in MP Cities</div><div class="prev-text">Bhopal, Indore, Gwalior — stay on lit, busy roads always.</div><ul class="prev-points"><li>Stay on well-lit, busy roads even if it means a longer route</li><li>Avoid shortcuts through parks, alleys, and isolated lanes — day or night</li><li>Walk confidently and with purpose — don't look lost or distracted</li><li>Keep your phone in hand with 112 ready to dial in one tap</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">🔦</div><div class="prev-title">Equip Yourself Before Going Out</div><div class="prev-text">Simple items that dramatically increase your safety.</div><ul class="prev-points"><li>Personal alarm (loud siren) — available on Amazon for ₹150-300</li><li>Pepper spray is legal in India — carry it in an accessible pocket, not your bag</li><li>Keep your keys in hand when approaching your vehicle or home</li><li>Charge your phone to 100% and carry a power bank every time</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">🛑</div><div class="prev-title">If You Feel Followed</div><div class="prev-text">Do not panic — act immediately and smartly.</div><ul class="prev-points"><li>Enter the nearest open shop, petrol pump, restaurant or dhaba immediately</li><li>Do NOT go home directly — never reveal your actual address to a follower</li><li>Shout "FIRE!" loudly — more people respond than to "Help" or "Bachao"</li><li>Call 100 or 112 and describe your exact location clearly</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">📞</div><div class="prev-title">Fake Call Technique</div><div class="prev-text">A simple trick that has helped thousands of women.</div><ul class="prev-points"><li>Pretend to be on a call if you feel followed or uncomfortable</li><li>Say loudly: "I am near [landmark], reaching in 5 minutes, bhaiya wait karo"</li><li>Some apps like bSafe simulate incoming calls on demand</li><li>This buys time to assess and move toward a safer location</li></ul></div>
+  <div id="prev-night" class="preventive-content">
+    <div class="prev-card"><div class="prev-card-icon">🌙</div><h4>Walking Alone at Night in HP</h4><ul><li>Stay on well-lit, busy roads even if it means a longer route</li><li>Avoid HP hill paths, forests, and isolated lanes after dark</li><li>Walk confidently — don't look lost or distracted</li><li>Keep 112 ready to dial in one tap</li></ul></div>
+    <div class="prev-card"><div class="prev-card-icon">🔦</div><h4>Equip Yourself</h4><ul><li>Personal alarm (loud siren) — ₹150–300 on Amazon</li><li>Pepper spray is legal in India — keep in an accessible pocket</li><li>Torch/flashlight essential in HP's frequent power outages</li><li>Charge phone to 100% before going out</li></ul></div>
+    <div class="prev-card"><div class="prev-card-icon">🛑</div><h4>If You Feel Followed</h4><ul><li>Enter the nearest open shop, dhaba, or petrol pump immediately</li><li>Do NOT go home directly — never reveal your address</li><li>Shout "FIRE!" loudly — more people respond than to "Help"</li><li>Call 100 or 112 and describe your exact location</li></ul></div>
+    <div class="prev-card"><div class="prev-card-icon">📞</div><h4>Fake Call Technique</h4><ul><li>Pretend to be on a call if you feel followed</li><li>Say loudly: "I am near [landmark], reaching in 5 minutes, bhaiya wait karo"</li><li>Apps like bSafe simulate incoming calls on demand</li><li>Buys time to move toward a safer location</li></ul></div>
   </div>
 
-  <div class="prev-panel" id="prev-home">
-    <div class="prev-card"><div class="prev-icon">🔐</div><div class="prev-title">Home Security Basics</div><div class="prev-text">Your home should be your safest space.</div><ul class="prev-points"><li>Never open the door without verifying — use peephole or intercom</li><li>Keep a door chain/stopper on while sleeping</li><li>Know all entry points to your residence</li><li>Keep a fully charged phone on your bedside every night</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">🤝</div><div class="prev-title">Build a Neighbourhood Network</div><div class="prev-text">A strong community is the best security system.</div><ul class="prev-points"><li>Introduce yourself to at least 2-3 trusted neighbours</li><li>Share emergency contact numbers with them</li><li>Join your housing society's WhatsApp group</li><li>Look out for strangers loitering near your building and alert neighbours</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">🚪</div><div class="prev-title">Verify People Entering Your Home</div><div class="prev-text">Background-check everyone who enters your home.</div><ul class="prev-points"><li>Verify Aadhaar of domestic helpers before hiring</li><li>Register domestic workers at your local police station (it's free)</li><li>Use verified platforms like UrbanClap for plumbers, electricians etc.</li><li>Never let unverified servicemen in when you are alone at home</li></ul></div>
+  <div id="prev-home" class="preventive-content">
+    <div class="prev-card"><div class="prev-card-icon">🔐</div><h4>Home Security Basics</h4><ul><li>Never open the door without verifying — use peephole or intercom</li><li>Keep a door chain on while sleeping</li><li>Know all entry points to your residence</li><li>Keep a fully charged phone on your bedside</li></ul></div>
+    <div class="prev-card"><div class="prev-card-icon">🤝</div><h4>Build a Neighbourhood Network</h4><ul><li>Introduce yourself to 2–3 trusted neighbours</li><li>Share emergency contact numbers with them</li><li>Join your housing society's WhatsApp group</li><li>Alert neighbours about strangers loitering near your building</li></ul></div>
+    <div class="prev-card"><div class="prev-card-icon">🚪</div><h4>Verify People Entering Your Home</h4><ul><li>Verify Aadhaar of domestic helpers before hiring</li><li>Register domestic workers at local HP police station (free)</li><li>Use verified platforms like UrbanClap for electricians etc.</li><li>Never let unverified persons in when alone</li></ul></div>
   </div>
 
-  <div class="prev-panel" id="prev-workplace">
-    <div class="prev-card"><div class="prev-icon">💼</div><div class="prev-title">Know the POSH Act Fully</div><div class="prev-text">The law is completely on your side at every workplace.</div><ul class="prev-points"><li>Every workplace with 10+ employees must have a functioning ICC</li><li>Complaint must be filed within 3 months of the incident</li><li>You are fully protected from retaliation after filing a complaint</li><li>If your workplace ICC fails, complain to Local Complaints Committee (LCC)</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">📝</div><div class="prev-title">Document Everything — Build Evidence</div><div class="prev-text">Evidence is your strongest weapon.</div><ul class="prev-points"><li>Save harassing messages, emails, chats as screenshots immediately</li><li>Note dates, times, witnesses, and exact words used</li><li>Keep a private written diary of incidents with dates and details</li><li>Store all evidence on cloud storage — not just on your phone</li></ul></div>
-    <div class="prev-card"><div class="prev-icon">🌃</div><div class="prev-title">Night Shift Safety — Your Legal Rights</div><div class="prev-text">Employers are legally required to ensure your safety.</div><ul class="prev-points"><li>Company must provide cab with a female security guard for night shifts</li><li>Share your cab details with family before every night shift</li><li>Travel with a colleague whenever possible</li><li>Report non-compliance to Labour Department or call 1800-11-8066</li></ul></div>
+  <div id="prev-workplace" class="preventive-content">
+    <div class="prev-card"><div class="prev-card-icon">💼</div><h4>Know the POSH Act Fully</h4><ul><li>Every workplace with 10+ employees must have a functioning ICC</li><li>Complaint must be filed within 3 months of incident</li><li>You are protected from retaliation after filing</li><li>If ICC fails, complain to Local Complaints Committee (LCC)</li></ul></div>
+    <div class="prev-card"><div class="prev-card-icon">📝</div><h4>Document Everything</h4><ul><li>Save harassing messages as screenshots immediately</li><li>Note dates, times, witnesses, and exact words used</li><li>Keep a private diary of incidents with dates</li><li>Store all evidence on cloud storage</li></ul></div>
+    <div class="prev-card"><div class="prev-card-icon">🌃</div><h4>Night Shift Safety</h4><ul><li>Company must provide cab with female security guard for night shifts</li><li>Share cab details with family before every night shift</li><li>Travel with a colleague whenever possible</li><li>Report non-compliance to HP Labour Department</li></ul></div>
   </div>
 </section>
 
-<!-- ══════════ 4. SAFETY TIPS ══════════ -->
+<hr class="divider">
+
+<!-- TIPS -->
 <section id="tips">
-  <div class="section-tag" style="background:rgba(0,188,212,.15);color:var(--teal);">💡 Daily Habits</div>
-  <h2 class="section-title">Essential <span style="color:var(--teal)">Safety Tips</span></h2>
+  <div class="section-tag">💡 Daily Habits</div>
+  <h2>Essential Safety Tips</h2>
   <p class="section-sub">Small daily habits that build a powerful protective shield around you.</p>
-  <div class="tips-grid reveal">
-    <div class="tip-card"><div class="tip-num">01</div><div class="tip-icon">📱</div><div class="tip-title">Share Live Location Always</div><div class="tip-text">Whenever travelling alone — day or night — share your live location via Google Maps with a parent or friend. Make it a non-negotiable daily habit.</div></div>
-    <div class="tip-card"><div class="tip-num">02</div><div class="tip-icon">🔋</div><div class="tip-title">Phone Charged = You're Armed</div><div class="tip-text">Treat battery like fuel. Carry a power bank always. Save ICE contacts (In Case of Emergency) at the top of your phonebook. Enable one-press SOS on your phone settings.</div></div>
-    <div class="tip-card"><div class="tip-num">03</div><div class="tip-icon">🚕</div><div class="tip-title">Verify Every Ride</div><div class="tip-text">Match cab number, driver name and photo before entering. Screenshot and send to family. Sit behind the driver. Make a vocal call stating your destination before moving.</div></div>
-    <div class="tip-card"><div class="tip-num">04</div><div class="tip-icon">👀</div><div class="tip-title">Stay Aware — One Earphone Off</div><div class="tip-text">Never use both earphones in unfamiliar areas. You need to hear your surroundings. Keep one ear free when walking alone on quiet roads or at night.</div></div>
-    <div class="tip-card"><div class="tip-num">05</div><div class="tip-icon">🛡️</div><div class="tip-title">Install Safety Apps</div><div class="tip-text">Himmat Plus, bSafe, or Shake2Safety. Enable them and test with family. The MP Police app allows direct complaint filing from anywhere in Madhya Pradesh.</div></div>
-    <div class="tip-card"><div class="tip-num">06</div><div class="tip-icon">🗣️</div><div class="tip-title">Trust Your Instincts Completely</div><div class="tip-text">If something feels wrong — it is wrong. Leave immediately. You do not owe anyone an explanation. Your safety always comes first — no exceptions.</div></div>
-    <div class="tip-card"><div class="tip-num">07</div><div class="tip-icon">🔑</div><div class="tip-title">Carry Keys & Pepper Spray</div><div class="tip-text">Keep keys in hand when approaching your vehicle or home — not buried in your bag. Pepper spray is legal in India, fits in any pocket, and is highly effective.</div></div>
-    <div class="tip-card"><div class="tip-num">08</div><div class="tip-icon">📸</div><div class="tip-title">Screenshot First — Then Block</div><div class="tip-text">If harassed online — screenshot everything first as evidence, then block and report. Don't delete anything before reporting to 1930. Evidence is your power.</div></div>
+  <div class="tips-grid">
+    <div class="tip-card"><div class="tip-num">01</div><div><div class="tip-icon">📱</div><div class="tip-title">Share Live Location Always</div><div class="tip-desc">Whenever travelling alone — day or night — share your live location via Google Maps. Make it a non-negotiable daily habit especially on HP mountain routes.</div></div></div>
+    <div class="tip-card"><div class="tip-num">02</div><div><div class="tip-icon">🔋</div><div class="tip-title">Phone Charged = You're Armed</div><div class="tip-desc">Carry a power bank always — HP's remote areas have limited charging spots. Save ICE contacts at the top of your phonebook. Enable one-press SOS.</div></div></div>
+    <div class="tip-card"><div class="tip-num">03</div><div><div class="tip-icon">🚕</div><div class="tip-title">Verify Every Ride</div><div class="tip-desc">Match cab number, driver name and photo before entering. Screenshot and send to family. Sit behind the driver. State your destination aloud before moving.</div></div></div>
+    <div class="tip-card"><div class="tip-num">04</div><div><div class="tip-icon">👀</div><div class="tip-title">Stay Aware — One Earphone Off</div><div class="tip-desc">Never use both earphones in unfamiliar areas. Keep one ear free when walking on quiet HP mountain roads, forest paths, or at night.</div></div></div>
+    <div class="tip-card"><div class="tip-num">05</div><div><div class="tip-icon">🛡️</div><div class="tip-title">Install Safety Apps</div><div class="tip-desc">Himmat Plus, bSafe, or Shake2Safety. The HP Police app allows direct complaint filing from anywhere in Himachal Pradesh — download and test it.</div></div></div>
+    <div class="tip-card"><div class="tip-num">06</div><div><div class="tip-icon">🗣️</div><div class="tip-title">Trust Your Instincts Completely</div><div class="tip-desc">If something feels wrong — it is wrong. Leave immediately. You do not owe anyone an explanation. Your safety always comes first.</div></div></div>
+    <div class="tip-card"><div class="tip-num">07</div><div><div class="tip-icon">🔑</div><div class="tip-title">Carry Keys & Pepper Spray</div><div class="tip-desc">Keep keys in hand approaching your vehicle or home. Pepper spray is legal in India, fits in any pocket, and is highly effective. Especially useful on isolated HP trails.</div></div></div>
+    <div class="tip-card"><div class="tip-num">08</div><div><div class="tip-icon">📸</div><div class="tip-title">Screenshot First — Then Block</div><div class="tip-desc">If harassed online — screenshot everything first as evidence, then block and report. Don't delete anything before reporting to 1930.</div></div></div>
   </div>
 </section>
 
-<!-- ══════════ 5. NEARBY HELP — ALL 52 MP DISTRICTS ══════════ -->
+<hr class="divider">
+
+<!-- HP DISTRICTS -->
 <section id="nearby">
-  <div class="section-tag" style="background:rgba(0,188,212,.15);color:var(--teal);">📍 All Madhya Pradesh</div>
-  <h2 class="section-title">Emergency Help — <span style="color:var(--teal)">Every MP District</span></h2>
-  <p class="section-sub">All 52 districts of Madhya Pradesh covered. Search your district and call directly. Every woman deserves safety — from Bhopal to Barwani, Gwalior to Singrauli.</p>
+  <div class="section-tag">📍 All Himachal Pradesh</div>
+  <h2>Emergency Help — Every HP District</h2>
+  <p class="section-sub">All 12 districts of Himachal Pradesh covered. Search your district and call directly. Every woman deserves safety — from Shimla to Kinnaur, Dharamshala to Lahaul.</p>
 
-  <div style="max-width:500px;margin:0 auto 28px;">
-    <input type="text" id="district-search" oninput="filterDistricts()" placeholder="🔍 Search your district name..." style="width:100%;background:#13132a;border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:14px 20px;color:#f0eafb;font-family:'DM Sans',sans-serif;font-size:.95rem;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='#00bcd4'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'"/>
+  <div class="district-search">
+    <input type="text" id="dist-search" placeholder="Search district..." oninput="filterDistricts()">
+  </div>
+  <div class="district-tabs">
+    <div class="dtab active" onclick="filterDiv('all',this)">🗺️ All Districts</div>
+    <div class="dtab" onclick="filterDiv('shimla',this)">🏛️ Shimla Division</div>
+    <div class="dtab" onclick="filterDiv('kangra',this)">⛰️ Kangra Division</div>
+    <div class="dtab" onclick="filterDiv('mandi',this)">🌊 Mandi Division</div>
+    <div class="dtab" onclick="filterDiv('hamirpur',this)">🌾 Hamirpur Division</div>
   </div>
 
-  <!-- DIVISION TABS -->
-  <div class="mp-district-tabs" id="division-tabs">
-    <button class="dist-tab active" onclick="filterByDiv('all',this)">🗺️ All Districts</button>
-    <button class="dist-tab" onclick="filterByDiv('bhopal-div',this)">🏙️ Bhopal Division</button>
-    <button class="dist-tab" onclick="filterByDiv('indore-div',this)">🌆 Indore Division</button>
-    <button class="dist-tab" onclick="filterByDiv('gwalior-div',this)">🏰 Gwalior Division</button>
-    <button class="dist-tab" onclick="filterByDiv('jabalpur-div',this)">🌿 Jabalpur Division</button>
-    <button class="dist-tab" onclick="filterByDiv('rewa-div',this)">🏔️ Rewa Division</button>
-    <button class="dist-tab" onclick="filterByDiv('sagar-div',this)">🌾 Sagar Division</button>
-    <button class="dist-tab" onclick="filterByDiv('ujjain-div',this)">🕌 Ujjain Division</button>
-    <button class="dist-tab" onclick="filterByDiv('narmadapuram-div',this)">🌊 Narmadapuram Div</button>
-    <button class="dist-tab" onclick="filterByDiv('chambal-div',this)">🦁 Chambal Division</button>
-    <button class="dist-tab" onclick="filterByDiv('shahdol-div',this)">⛰️ Shahdol Division</button>
+  <div class="districts-grid" id="districts-grid">
+    <div class="district-card" data-div="shimla"><h4>🏛️ Shimla</h4><p>📞 Police: <a href="tel:01772812344">0177-2812344</a></p><p>🏥 IGMC Emergency: <a href="tel:01772658282">0177-2658282</a></p><p>👩 Mahila Thana: <a href="tel:01772650005">0177-2650005</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div class="district-card" data-div="kangra"><h4>⛰️ Kangra (Dharamshala)</h4><p>📞 Police: <a href="tel:01892224700">01892-224700</a></p><p>🏥 Dr RPGMC Hospital: <a href="tel:01892222741">01892-222741</a></p><p>👩 Mahila Thana: <a href="tel:01892224340">01892-224340</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div class="district-card" data-div="mandi"><h4>🌊 Mandi</h4><p>📞 Police: <a href="tel:01905222266">01905-222266</a></p><p>🏥 Zonal Hospital Mandi: <a href="tel:01905222014">01905-222014</a></p><p>👩 Mahila Thana: <a href="tel:01905222100">01905-222100</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div class="district-card" data-div="hamirpur"><h4>🌾 Hamirpur</h4><p>📞 Police: <a href="tel:01972222000">01972-222000</a></p><p>🏥 District Hospital: <a href="tel:01972223350">01972-223350</a></p><p>👩 Women Helpline: <a href="tel:1091">1091</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div class="district-card" data-div="shimla"><h4>🏔️ Kinnaur</h4><p>📞 Police: <a href="tel:01786222222">01786-222222</a></p><p>🏥 Zonal Hospital Reckong Peo: <a href="tel:01786222066">01786-222066</a></p><p>👩 Women Helpline: <a href="tel:1091">1091</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div class="district-card" data-div="kangra"><h4>🌿 Kullu</h4><p>📞 Police: <a href="tel:01902222126">01902-222126</a></p><p>🏥 Zonal Hospital Kullu: <a href="tel:01902222340">01902-222340</a></p><p>👩 Women Helpline: <a href="tel:1091">1091</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div class="district-card" data-div="mandi"><h4>❄️ Lahaul & Spiti</h4><p>📞 Police: <a href="tel:01900222299">01900-222299</a></p><p>🏥 District Hospital Keylong: <a href="tel:01900222066">01900-222066</a></p><p>👩 Women Helpline: <a href="tel:1091">1091</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div class="district-card" data-div="shimla"><h4>🌲 Solan</h4><p>📞 Police: <a href="tel:01792220044">01792-220044</a></p><p>🏥 Zonal Hospital Solan: <a href="tel:01792220330">01792-220330</a></p><p>👩 Women Helpline: <a href="tel:1091">1091</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div class="district-card" data-div="hamirpur"><h4>🏙️ Una</h4><p>📞 Police: <a href="tel:01975225300">01975-225300</a></p><p>🏥 Zonal Hospital Una: <a href="tel:01975225200">01975-225200</a></p><p>👩 Women Helpline: <a href="tel:1091">1091</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div class="district-card" data-div="hamirpur"><h4>🌾 Bilaspur</h4><p>📞 Police: <a href="tel:01978221022">01978-221022</a></p><p>🏥 Zonal Hospital Bilaspur: <a href="tel:01978221555">01978-221555</a></p><p>👩 Women Helpline: <a href="tel:1091">1091</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div class="district-card" data-div="kangra"><h4>🕌 Chamba</h4><p>📞 Police: <a href="tel:01899222200">01899-222200</a></p><p>🏥 Zonal Hospital Chamba: <a href="tel:01899222066">01899-222066</a></p><p>👩 Women Helpline: <a href="tel:1091">1091</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div class="district-card" data-div="shimla"><h4>⛰️ Sirmaur</h4><p>📞 Police: <a href="tel:01702222440">01702-222440</a></p><p>🏥 Zonal Hospital Nahan: <a href="tel:01702222033">01702-222033</a></p><p>👩 Women Helpline: <a href="tel:1091">1091</a></p><p>🆘 District Emergency: <a href="tel:112">112</a></p></div>
+    <div id="no-result" class="no-result" style="display:none;">No district found. Try a different spelling.</div>
   </div>
-
-  <div id="districts-container" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;margin-top:8px;"></div>
-  <div id="no-result" style="display:none;text-align:center;padding:40px;color:var(--muted);font-size:.95rem;">No district found. Try a different spelling.</div>
 </section>
 
-<!-- ══════════ 6. SELF DEFENSE ══════════ -->
+<hr class="divider">
+
+<!-- SELF DEFENSE -->
 <section id="selfdefense">
-  <div class="section-tag" style="background:rgba(255,112,67,.15);color:var(--orange);">🥋 Protect Yourself</div>
-  <h2 class="section-title">Self Defense <span style="color:var(--orange)">Techniques</span></h2>
-  <p class="section-sub">No experience needed. These moves create 2-5 seconds — enough time to escape.</p>
-  <div class="defense-grid reveal">
-    <div class="defense-card"><div class="dc-header"><div class="dc-icon" style="background:rgba(255,61,139,.2);">👊</div><div><div class="dc-title">Wrist Grab Escape</div><div class="dc-level">⭐ Beginner — Learn this first</div></div></div><ul class="dc-steps"><li>Rotate your wrist toward the attacker's thumb — the weakest grip point</li><li>Pull sharply toward your own body in one swift motion</li><li>Step back immediately to create distance</li><li>Shout loudly to attract bystanders, then run</li></ul></div>
-    <div class="defense-card"><div class="dc-header"><div class="dc-icon" style="background:rgba(0,188,212,.2);">🦵</div><div><div class="dc-title">Knee Strike</div><div class="dc-level">⭐ Beginner — High impact</div></div></div><ul class="dc-steps"><li>If grabbed from the front — do not struggle yet, stay calm</li><li>Grab the attacker's shoulders or clothing for balance</li><li>Drive your knee sharply upward into the groin with full force</li><li>Run and shout immediately — do not wait to assess their reaction</li></ul></div>
-    <div class="defense-card"><div class="dc-header"><div class="dc-icon" style="background:rgba(124,58,237,.2);">🤜</div><div><div class="dc-title">Palm Strike to Nose</div><div class="dc-level">⭐⭐ Intermediate</div></div></div><ul class="dc-steps"><li>Fingers bent back, palm flat and firm — NOT a closed fist</li><li>Strike sharply upward toward the bridge of the nose</li><li>Drive from your hip — use whole body weight, not just arm</li><li>Follow with a second strike if needed, then escape immediately</li></ul></div>
-    <div class="defense-card"><div class="dc-header"><div class="dc-icon" style="background:rgba(255,214,0,.2);">😤</div><div><div class="dc-title">Bear Hug Escape</div><div class="dc-level">⭐⭐ Intermediate</div></div></div><ul class="dc-steps"><li>The moment grabbed from behind — drop your weight suddenly by bending knees</li><li>Stomp hard on the attacker's foot with your heel</li><li>Throw your head backward sharply into their face</li><li>Spin, elbow strike to the ribs, run immediately</li></ul></div>
-    <div class="defense-card"><div class="dc-header"><div class="dc-icon" style="background:rgba(0,230,118,.2);">🔑</div><div><div class="dc-title">Keys &amp; Objects as Tools</div><div class="dc-level">⭐ Beginner — Always Accessible</div></div></div><ul class="dc-steps"><li>Hold keys between fingers when walking alone at night</li><li>A firm jab with keys to the face creates an opening to escape</li><li>Pepper spray is legal in India and highly effective — carry it always</li><li>Any rigid object (umbrella, water bottle) can be used defensively</li></ul></div>
-    <div class="defense-card"><div class="dc-header"><div class="dc-icon" style="background:rgba(255,112,67,.2);">🧠</div><div><div class="dc-title">Mental Preparedness</div><div class="dc-level">⭐ The Most Important Defense</div></div></div><ul class="dc-steps"><li>Stay aware at all times — no earphones in both ears ever</li><li>Make confident eye contact — it signals you are not an easy target</li><li>Shout "FIRE!" not "Help" — people respond to fire much faster</li><li>Trust your gut instantly — if it feels wrong, leave before you can even analyse why</li></ul></div>
+  <div class="section-tag">🥋 Protect Yourself</div>
+  <h2>Self Defense Techniques</h2>
+  <p class="section-sub">No experience needed. These moves create 2–5 seconds — enough time to escape.</p>
+  <div class="sd-grid">
+    <div class="sd-card"><div class="sd-icon">👊</div><div class="sd-level">⭐ Beginner — Learn this first</div><h4>Wrist Grab Escape</h4><ol><li>Rotate your wrist toward the attacker's thumb — the weakest grip point</li><li>Pull sharply toward your own body in one swift motion</li><li>Step back immediately to create distance</li><li>Shout loudly to attract bystanders, then run</li></ol></div>
+    <div class="sd-card"><div class="sd-icon">🦵</div><div class="sd-level">⭐ Beginner — High impact</div><h4>Knee Strike</h4><ol><li>If grabbed from the front — do not struggle yet, stay calm</li><li>Grab the attacker's shoulders for balance</li><li>Drive your knee sharply upward into the groin with full force</li><li>Run and shout immediately</li></ol></div>
+    <div class="sd-card"><div class="sd-icon">🤜</div><div class="sd-level">⭐⭐ Intermediate</div><h4>Palm Strike to Nose</h4><ol><li>Fingers bent back, palm flat — NOT a closed fist</li><li>Strike sharply upward toward the bridge of the nose</li><li>Drive from your hip — use whole body weight</li><li>Follow with a second strike if needed, then escape</li></ol></div>
+    <div class="sd-card"><div class="sd-icon">😤</div><div class="sd-level">⭐⭐ Intermediate</div><h4>Bear Hug Escape</h4><ol><li>The moment grabbed from behind — drop your weight by bending knees</li><li>Stomp hard on the attacker's foot with your heel</li><li>Throw your head backward sharply into their face</li><li>Spin, elbow strike to ribs, run immediately</li></ol></div>
+    <div class="sd-card"><div class="sd-icon">🔑</div><div class="sd-level">⭐ Beginner — Always Accessible</div><h4>Keys & Objects as Tools</h4><ol><li>Hold keys between fingers when walking alone at night</li><li>A firm jab with keys to the face creates an opening to escape</li><li>Pepper spray is legal in India — carry it always</li><li>Any rigid object (umbrella, water bottle) can be used defensively</li></ol></div>
+    <div class="sd-card"><div class="sd-icon">🧠</div><div class="sd-level">⭐ The Most Important Defense</div><h4>Mental Preparedness</h4><ol><li>Stay aware at all times — no earphones in both ears</li><li>Make confident eye contact — signals you are not an easy target</li><li>Shout "FIRE!" not "Help" — people respond to fire faster</li><li>Trust your gut instantly — if it feels wrong, leave</li></ol></div>
   </div>
 </section>
 
-<!-- ══════════ 7. RIGHTS ══════════ -->
+<hr class="divider">
+
+<!-- RIGHTS -->
 <section id="rights">
-  <div class="section-tag" style="background:rgba(124,58,237,.15);color:var(--purple);">⚖️ Know Your Rights</div>
-  <h2 class="section-title">Women's Rights <span style="color:var(--purple)">& Indian Laws</span></h2>
-  <p class="section-sub">These laws are your legal shield. Know them — and use them without hesitation.</p>
-  <div class="rights-grid reveal">
-    <div class="right-card"><div class="rc-tag" style="background:rgba(255,61,139,.15);color:var(--pink);">Workplace</div><div class="rc-title">POSH Act — Sexual Harassment at Work</div><div class="rc-text">Every workplace with 10+ employees must have a functioning ICC. File within 3 months. Your identity is protected and retaliation against you is a separate punishable offense.</div><div class="rc-year">Sexual Harassment of Women at Workplace Act, 2013</div></div>
-    <div class="right-card"><div class="rc-tag" style="background:rgba(0,188,212,.15);color:var(--teal);">Home Safety</div><div class="rc-title">Domestic Violence Protection</div><div class="rc-text">Physical, emotional, sexual, verbal, and economic abuse are ALL covered. You can get a Protection Order, Residence Order (right to stay in shared home), and Monetary Relief — even against in-laws.</div><div class="rc-year">Protection of Women from Domestic Violence Act, 2005</div></div>
-    <div class="right-card"><div class="rc-tag" style="background:rgba(124,58,237,.15);color:var(--purple);">Police Rights</div><div class="rc-title">Zero FIR — File Anywhere in India</div><div class="rc-text">You can file an FIR at ANY police station regardless of jurisdiction. Police CANNOT refuse — doing so is a criminal offense under Section 166A IPC. They must register and transfer it.</div><div class="rc-year">Criminal Procedure Code — 2013 Amendment</div></div>
-    <div class="right-card"><div class="rc-tag" style="background:rgba(255,214,0,.15);color:var(--yellow);">Survivor Rights</div><div class="rc-title">Statement at Home — Assault Survivors</div><div class="rc-text">A survivor cannot be called to a police station alone at night. Her statement is recorded at home by a magistrate. Her identity cannot be revealed by police or media under any circumstances.</div><div class="rc-year">Section 164 CrPC + IPC Section 228A</div></div>
-    <div class="right-card"><div class="rc-tag" style="background:rgba(0,230,118,.15);color:var(--green);">Legal Aid</div><div class="rc-title">Right to Free Legal Representation</div><div class="rc-text">Every woman victim of crime gets completely free legal services — advocate, court fees, and documentation — from the District Legal Services Authority. Call 15100 or visit any district court in MP.</div><div class="rc-year">Legal Services Authorities Act, 1987</div></div>
-    <div class="right-card"><div class="rc-tag" style="background:rgba(255,112,67,.15);color:var(--orange);">Work Rights</div><div class="rc-title">Maternity Benefits — 26 Weeks</div><div class="rc-text">26 weeks of fully paid maternity leave. No employer can fire or demote a pregnant woman. Nursing breaks must be provided. Work-from-home must be considered on return from leave.</div><div class="rc-year">Maternity Benefit (Amendment) Act, 2017</div></div>
-    <div class="right-card"><div class="rc-tag" style="background:rgba(0,188,212,.15);color:var(--teal);">Online Safety</div><div class="rc-title">Cyber Crime Against Women</div><div class="rc-text">Morphed images, cyberstalking, sextortion, and online harassment are punishable with up to 3 years imprisonment and fine. Report at cybercrime.gov.in or 1930. First responders must act within 24 hours.</div><div class="rc-year">IT Act 2000 + IPC Sections 354D, 509</div></div>
-    <div class="right-card"><div class="rc-tag" style="background:rgba(255,61,139,.15);color:var(--pink);">Night Safety</div><div class="rc-title">Right to Safe Night Shift Transport</div><div class="rc-text">Women in night shifts must be provided safe cab transport with a female security guard. Employers who fail to ensure safety are liable under the Factories Act and can be reported to the Labour Department.</div><div class="rc-year">Factories Act + Industrial Employment Rules</div></div>
+  <div class="section-tag">⚖️ Know Your Rights</div>
+  <h2>Women's Rights & Indian Laws</h2>
+  <p class="section-sub">These laws are your legal shield. Know them — and use them without hesitation anywhere in Himachal Pradesh.</p>
+  <div class="rights-grid">
+    <div class="right-card"><div class="right-tag">Workplace</div><h4>POSH Act — Sexual Harassment at Work</h4><p>Every workplace with 10+ employees must have a functioning ICC. File within 3 months. Your identity is protected and retaliation is a separate punishable offense.</p><div class="right-law">Sexual Harassment of Women at Workplace Act, 2013</div></div>
+    <div class="right-card"><div class="right-tag">Home Safety</div><h4>Domestic Violence Protection</h4><p>Physical, emotional, sexual, verbal, and economic abuse are ALL covered. You can get a Protection Order, Residence Order, and Monetary Relief — even against in-laws.</p><div class="right-law">Protection of Women from Domestic Violence Act, 2005</div></div>
+    <div class="right-card"><div class="right-tag">Police Rights</div><h4>Zero FIR — File Anywhere in India</h4><p>You can file an FIR at ANY police station regardless of jurisdiction. Police CANNOT refuse — doing so is a criminal offense under Section 166A IPC.</p><div class="right-law">Criminal Procedure Code — 2013 Amendment</div></div>
+    <div class="right-card"><div class="right-tag">Survivor Rights</div><h4>Statement at Home — Assault Survivors</h4><p>A survivor cannot be called to a police station alone at night. Her statement is recorded at home by a magistrate. Her identity cannot be revealed by police or media.</p><div class="right-law">Section 164 CrPC + IPC Section 228A</div></div>
+    <div class="right-card"><div class="right-tag">Legal Aid</div><h4>Right to Free Legal Representation</h4><p>Every woman victim of crime gets completely free legal services — advocate, court fees, and documentation — from the District Legal Services Authority in HP.</p><div class="right-law">Legal Services Authorities Act, 1987</div></div>
+    <div class="right-card"><div class="right-tag">Work Rights</div><h4>Maternity Benefits — 26 Weeks</h4><p>26 weeks of fully paid maternity leave. No employer can fire or demote a pregnant woman. Nursing breaks must be provided. Work-from-home must be considered on return.</p><div class="right-law">Maternity Benefit (Amendment) Act, 2017</div></div>
+    <div class="right-card"><div class="right-tag">Online Safety</div><h4>Cyber Crime Against Women</h4><p>Morphed images, cyberstalking, sextortion, and online harassment are punishable with up to 3 years imprisonment. Report at cybercrime.gov.in or 1930.</p><div class="right-law">IT Act 2000 + IPC Sections 354D, 509</div></div>
+    <div class="right-card"><div class="right-tag">Night Safety</div><h4>Right to Safe Night Shift Transport</h4><p>Women in night shifts must be provided safe cab transport with a female security guard. Employers who fail are liable under the Factories Act — report to HP Labour Department.</p><div class="right-law">Factories Act + Industrial Employment Rules</div></div>
   </div>
 </section>
+
+<hr class="divider">
 
 <!-- REPORT -->
 <section id="report">
-  <div class="section-tag" style="background:rgba(124,58,237,.15);color:var(--purple);">📝 Report</div>
-  <h2 class="section-title" style="text-align:center;">Report an <span style="color:var(--purple)">Incident</span></h2>
-  <p class="section-sub" style="margin:0 auto 36px;text-align:center;">Confidential and secure. Anonymous reporting available.</p>
-  <div class="report-wrap reveal">
-    <div class="form-grid" id="reportForm">
-      <div class="form-group"><label class="form-label">Your Name</label><input type="text" class="form-input" placeholder="Enter your name" id="f-name"/></div>
-      <div class="form-group"><label class="form-label">Contact Number</label><input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX" id="f-phone"/></div>
-      <div class="form-group"><label class="form-label">Incident Type</label><select class="form-select" id="f-type"><option value="">Select type...</option><option>Harassment</option><option>Stalking</option><option>Domestic Violence</option><option>Sexual Assault</option><option>Workplace Misconduct</option><option>Cyber Crime</option><option>Eve-Teasing</option><option>Trafficking</option><option>Other</option></select></div>
-      <div class="form-group"><label class="form-label">MP District</label><select class="form-select"><option value="">Select District...</option><option>Bhopal</option><option>Indore</option><option>Gwalior</option><option>Jabalpur</option><option>Ujjain</option><option>Sehore</option><option>Vidisha</option><option>Rewa</option><option>Sagar</option><option>Other</option></select></div>
-      <div class="form-group"><label class="form-label">Location of Incident</label><input type="text" class="form-input" placeholder="Area / Landmark" id="f-location"/></div>
-      <div class="form-group"><label class="form-label">Date of Incident</label><input type="date" class="form-input" id="f-date"/></div>
-      <div class="form-group full"><label class="form-label">Describe the Incident</label><textarea class="form-textarea" placeholder="Describe what happened — time, place, description of person(s) involved. Everything is confidential." id="f-desc"></textarea></div>
-      <div class="form-group full"><div class="anonymous-check"><input type="checkbox" id="anon"/><label for="anon">🕵️ Submit anonymously — your name and contact will NOT be stored or shared</label></div></div>
+  <div class="section-tag">📝 Report</div>
+  <h2>Report an Incident</h2>
+  <p class="section-sub">Confidential and secure. Anonymous reporting available. If in immediate danger — call <strong>112</strong> right now.</p>
+  <div class="report-form">
+    <div class="report-row">
+      <div><label style="font-size:0.82rem;color:var(--muted);margin-bottom:6px;display:block;">Your Name</label><input type="text" placeholder="Your name (optional for anonymous)"></div>
+      <div><label style="font-size:0.82rem;color:var(--muted);margin-bottom:6px;display:block;">Contact Number</label><input type="tel" placeholder="+91XXXXXXXXXX (optional)"></div>
     </div>
-    <div id="form-success">✅ Report submitted securely.<br/>If in immediate danger — call <strong style="color:var(--pink);">112</strong> right now.<br/>Stay safe. 💜</div>
+    <div class="report-row">
+      <div>
+        <label style="font-size:0.82rem;color:var(--muted);margin-bottom:6px;display:block;">Incident Type</label>
+        <select>
+          <option>Select type...</option>
+          <option>Harassment</option><option>Stalking</option><option>Domestic Violence</option>
+          <option>Sexual Assault</option><option>Workplace Misconduct</option><option>Cyber Crime</option>
+          <option>Eve-Teasing</option><option>Trafficking</option><option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label style="font-size:0.82rem;color:var(--muted);margin-bottom:6px;display:block;">HP District</label>
+        <select>
+          <option>Select District...</option>
+          <option>Shimla</option><option>Kangra</option><option>Mandi</option><option>Kullu</option>
+          <option>Hamirpur</option><option>Una</option><option>Bilaspur</option><option>Solan</option>
+          <option>Sirmaur</option><option>Chamba</option><option>Kinnaur</option><option>Lahaul & Spiti</option>
+        </select>
+      </div>
+    </div>
+    <div><label style="font-size:0.82rem;color:var(--muted);margin-bottom:6px;display:block;">Location of Incident</label><input type="text" placeholder="Area, locality, landmark"></div>
+    <div><label style="font-size:0.82rem;color:var(--muted);margin-bottom:6px;display:block;">Date of Incident</label><input type="date"></div>
+    <div><label style="font-size:0.82rem;color:var(--muted);margin-bottom:6px;display:block;">Describe the Incident</label><textarea placeholder="Describe what happened in as much or as little detail as you are comfortable with..."></textarea></div>
+    <p class="anon-note">🕵️ Submit anonymously — your name and contact will NOT be stored or shared</p>
     <button class="submit-btn" onclick="submitReport()">📤 Submit Report Securely</button>
+    <div class="submit-confirm" id="submit-confirm">✅ Report submitted securely. If in immediate danger — call <strong>112</strong> right now. Stay safe. 💜</div>
   </div>
 </section>
 
-<!-- ══════════ WOW: SAFETY SCORE PREDICTOR ══════════ -->
-<section id="predictor" style="background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(124,58,237,.13),var(--dark));padding:76px 44px;">
-  <div class="section-tag" style="background:rgba(255,214,0,.15);color:var(--yellow);">🔥 WOW Feature</div>
-  <h2 class="section-title">Area <span style="color:var(--yellow);">Safety Score</span> Predictor</h2>
-  <p class="section-sub">Powered by Python logic — Dictionary maps areas to scores, Tuple holds fixed risk factors, Set removes duplicate alerts. Enter your area and get an instant safety analysis.</p>
+<hr class="divider">
 
-  <div style="max-width:700px;margin:0 auto;">
-    <!-- Input Card -->
-    <div style="background:#13132a;border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:36px;margin-bottom:24px;">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
-        <div>
-          <label style="font-size:.75rem;font-weight:700;color:#a09ab8;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:8px;">📍 Your Area / Locality</label>
-          <input id="pred-area" type="text" placeholder="e.g. MP Nagar, TT Nagar..." style="width:100%;background:#0d0d1a;border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 16px;color:#f0eafb;font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none;" onfocus="this.style.borderColor='#ffd600'" onblur="this.style.borderColor='rgba(255,255,255,.1)'"/>
-        </div>
-        <div>
-          <label style="font-size:.75rem;font-weight:700;color:#a09ab8;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:8px;">🏙️ MP District</label>
-          <select id="pred-district" style="width:100%;background:#0d0d1a;border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 16px;color:#f0eafb;font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none;">
-            <option value="">Select District...</option>
-            <option>Bhopal</option><option>Indore</option><option>Gwalior</option><option>Jabalpur</option><option>Ujjain</option><option>Sehore</option><option>Rewa</option><option>Satna</option><option>Morena</option><option>Bhind</option><option>Chhindwara</option><option>Sagar</option><option>Damoh</option><option>Katni</option><option>Balaghat</option><option>Other MP District</option>
+<!-- PREDICTOR -->
+<div id="predictor" style="padding:60px 0;">
+  <section style="padding:0 0 30px;">
+    <div class="section-tag">🔥 WOW Feature</div>
+    <h2>Area Safety Score Predictor</h2>
+    <p class="section-sub">Enter your area and time to get an instant safety analysis for Himachal Pradesh.</p>
+  </section>
+  <div style="background:var(--bg2);border-radius:24px;padding:50px 24px;margin:0 24px;">
+    <div class="predictor-inner">
+      <div class="pred-form">
+        <input type="text" id="pred-area" placeholder="📍 Your Area / Locality">
+        <select id="pred-district">
+          <option>Select HP District...</option>
+          <option>Shimla</option><option>Kangra</option><option>Mandi</option><option>Kullu</option>
+          <option>Hamirpur</option><option>Una</option><option>Bilaspur</option><option>Solan</option>
+          <option>Sirmaur</option><option>Chamba</option><option>Kinnaur</option><option>Lahaul & Spiti</option>
+        </select>
+        <div class="pred-row">
+          <select id="pred-time">
+            <option>☀️ Daytime (6AM–6PM)</option>
+            <option>🌆 Evening (6PM–9PM)</option>
+            <option>🌙 Night (9PM–12AM)</option>
+            <option>🌑 Late Night (12AM–6AM)</option>
+          </select>
+          <select id="pred-type">
+            <option>🛒 Market / Busy Area</option>
+            <option>🏘️ Residential Colony</option>
+            <option>🌑 Isolated / Dark Lane</option>
+            <option>🚌 Transport Hub</option>
+            <option>🏛️ Govt / Public Office Area</option>
+            <option>🏔️ Mountain Trail / Trek Route</option>
           </select>
         </div>
-        <div>
-          <label style="font-size:.75rem;font-weight:700;color:#a09ab8;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:8px;">🕐 Time of Day</label>
-          <select id="pred-time" style="width:100%;background:#0d0d1a;border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 16px;color:#f0eafb;font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none;">
-            <option value="day">☀️ Daytime (6AM–6PM)</option>
-            <option value="evening">🌆 Evening (6PM–9PM)</option>
-            <option value="night">🌙 Night (9PM–12AM)</option>
-            <option value="latenight">🌑 Late Night (12AM–6AM)</option>
-          </select>
-        </div>
-        <div>
-          <label style="font-size:.75rem;font-weight:700;color:#a09ab8;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:8px;">📊 Area Type</label>
-          <select id="pred-areatype" style="width:100%;background:#0d0d1a;border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 16px;color:#f0eafb;font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none;">
-            <option value="market">🛒 Market / Busy Area</option>
-            <option value="residential">🏘️ Residential Colony</option>
-            <option value="isolated">🌑 Isolated / Dark Lane</option>
-            <option value="transport">🚌 Transport Hub</option>
-            <option value="govt">🏛️ Govt / Public Office Area</option>
-          </select>
-        </div>
+        <button class="pred-btn" onclick="predictScore()">⚡ Predict My Safety Score</button>
       </div>
-      <button onclick="predictSafety()" style="width:100%;padding:16px;background:linear-gradient(135deg,#ffd600,#ff7043);border:none;border-radius:12px;color:#0d0d1a;font-family:'Syne',sans-serif;font-weight:800;font-size:1.05rem;cursor:pointer;letter-spacing:.03em;">⚡ Predict My Safety Score</button>
-    </div>
-
-    <!-- Result Card -->
-    <div id="pred-result" style="display:none;background:#13132a;border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:36px;">
-      <!-- Score Ring -->
-      <div style="text-align:center;margin-bottom:28px;">
-        <div style="position:relative;width:160px;height:160px;margin:0 auto 16px;">
-          <svg width="160" height="160" id="score-ring-svg" style="transform:rotate(-90deg);">
-            <circle cx="80" cy="80" r="68" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="12"/>
-            <circle cx="80" cy="80" r="68" fill="none" stroke="#00e676" stroke-width="12" stroke-dasharray="427" stroke-dashoffset="427" id="score-circle" style="transition:stroke-dashoffset 1.5s ease,stroke 1s ease;"/>
-          </svg>
-          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-            <div id="score-num" style="font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:800;color:#f0eafb;line-height:1;">--</div>
-            <div style="font-size:.72rem;color:#a09ab8;font-weight:600;">/ 100</div>
-          </div>
-        </div>
-        <div id="score-label" style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;margin-bottom:4px;"></div>
-        <div id="score-sub" style="font-size:.85rem;color:#a09ab8;"></div>
+      <div class="score-display" id="score-display">
+        <div style="font-size:0.85rem;color:var(--muted);margin-bottom:8px;">Safety Score for your area</div>
+        <div class="score-num" id="score-num" style="color:var(--accent);">--</div>
+        <div class="score-label">/ 100</div>
+        <ul class="score-tips" id="score-tips"></ul>
       </div>
-
-      <!-- Risk Factors -->
-      <div id="risk-factors" style="margin-bottom:20px;"></div>
-
-      <!-- Alerts Set -->
-      <div id="alert-set" style="margin-bottom:20px;"></div>
-
-      <!-- Recommendations -->
-      <div id="recommendations" style=""></div>
     </div>
-
   </div>
-</section>
+</div>
 
-<!-- ══════════ CRIME CHARTS (MATPLOTLIB VISIBLE) ══════════ -->
-<section id="charts" style="background:#13132a;padding:76px 44px;">
-  <div class="section-tag" style="background:rgba(255,61,139,.15);color:#ff3d8b;">📊 Data Insights</div>
-  <h2 class="section-title">MP Crime <span style="color:#ff3d8b;">Statistics</span></h2>
-  <p class="section-sub">Visual data powered by Matplotlib & NumPy — bar charts, safety index, district risk levels. Awareness is the first step to safety.</p>
+<hr class="divider">
 
-  <!-- Chart Tabs -->
-  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px;">
-    <button class="chart-tab-btn active" onclick="showChart('bar',this)" style="background:#ff3d8b;color:#fff;border:none;padding:10px 22px;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;font-size:.82rem;cursor:pointer;">📊 District Cases</button>
-    <button class="chart-tab-btn" onclick="showChart('safety',this)" style="background:#13132a;color:#a09ab8;border:1px solid rgba(255,255,255,.1);padding:10px 22px;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;font-size:.82rem;cursor:pointer;">🛡️ Safety Index</button>
-    <button class="chart-tab-btn" onclick="showChart('type',this)" style="background:#13132a;color:#a09ab8;border:1px solid rgba(255,255,255,.1);padding:10px 22px;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;font-size:.82rem;cursor:pointer;">🥧 Crime Types</button>
-    <button class="chart-tab-btn" onclick="showChart('trend',this)" style="background:#13132a;color:#a09ab8;border:1px solid rgba(255,255,255,.1);padding:10px 22px;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;font-size:.82rem;cursor:pointer;">📈 Year Trend</button>
+<!-- CHARTS -->
+<section id="charts">
+  <div class="section-tag">📊 Data Insights</div>
+  <h2>HP Crime Statistics</h2>
+  <p class="section-sub">Awareness is the first step to safety. Data from NCRB Himachal Pradesh district reports.</p>
+
+  <div class="chart-tabs">
+    <div class="chart-tab active" onclick="switchChart('bar',this)">📊 District Cases</div>
+    <div class="chart-tab" onclick="switchChart('safety',this)">🛡️ Safety Index</div>
+    <div class="chart-tab" onclick="switchChart('pie',this)">🥧 Crime Types</div>
+    <div class="chart-tab" onclick="switchChart('trend',this)">📈 Year Trend</div>
   </div>
 
-  <div style="background:#0d0d1a;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:28px;">
-    <canvas id="mainChart" height="320"></canvas>
+  <div id="chart-bar" class="chart-view active">
+    <div class="chart-stats">
+      <div class="stat-card"><div class="stat-label">📐 Mean Cases/District</div><div class="stat-val">238</div><div class="stat-sub">NumPy Mean</div></div>
+      <div class="stat-card"><div class="stat-label">📈 Highest</div><div class="stat-val">612</div><div class="stat-sub">Kangra</div></div>
+      <div class="stat-card"><div class="stat-label">📉 Lowest</div><div class="stat-val">54</div><div class="stat-sub">Lahaul & Spiti</div></div>
+      <div class="stat-card"><div class="stat-label">📊 Std Deviation</div><div class="stat-val">142</div><div class="stat-sub">np.std(data)</div></div>
+    </div>
+    <div class="bar-chart" id="bar-chart"></div>
   </div>
 
-  <!-- NumPy Stats Row -->
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:24px;" id="numpy-stats">
-    <div style="background:#0d0d1a;border:1px solid rgba(0,230,118,.2);border-radius:14px;padding:20px;text-align:center;">
-      <div style="font-size:.7rem;color:#a09ab8;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;">📐 NumPy Mean</div>
-      <div style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:#00e676;">642</div>
-      <div style="font-size:.75rem;color:#a09ab8;">Avg cases/district</div>
-    </div>
-    <div style="background:#0d0d1a;border:1px solid rgba(255,61,139,.2);border-radius:14px;padding:20px;text-align:center;">
-      <div style="font-size:.7rem;color:#a09ab8;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;">📈 NumPy Max</div>
-      <div style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:#ff3d8b;">1,842</div>
-      <div style="font-size:.75rem;color:#a09ab8;">Highest — Indore</div>
-    </div>
-    <div style="background:#0d0d1a;border:1px solid rgba(0,188,212,.2);border-radius:14px;padding:20px;text-align:center;">
-      <div style="font-size:.7rem;color:#a09ab8;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;">📉 NumPy Min</div>
-      <div style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:#00bcd4;">142</div>
-      <div style="font-size:.75rem;color:#a09ab8;">Lowest — Niwari</div>
-    </div>
-    <div style="background:#0d0d1a;border:1px solid rgba(124,58,237,.2);border-radius:14px;padding:20px;text-align:center;">
-      <div style="font-size:.7rem;color:#a09ab8;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;">📊 Std Deviation</div>
-      <div style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:#7c3aed;">318</div>
-      <div style="font-size:.75rem;color:#a09ab8;">np.std(case_data)</div>
+  <div id="chart-safety" class="chart-view">
+    <p style="color:var(--muted);font-size:0.85rem;margin-bottom:20px;">Safety Index (0–100): higher = safer. Calculated from population-adjusted crime rate, police presence, and helpline response time.</p>
+    <div class="safety-index" id="safety-index"></div>
+  </div>
+
+  <div id="chart-pie" class="chart-view">
+    <p style="color:var(--muted);font-size:0.85rem;margin-bottom:16px;">Distribution of reported crimes against women in HP by category.</p>
+    <svg viewBox="0 0 320 220" style="max-width:400px;display:block;margin:0 auto;">
+      <circle cx="110" cy="110" r="90" fill="none" stroke="var(--accent)" stroke-width="36" stroke-dasharray="113 452" stroke-dashoffset="0"/>
+      <circle cx="110" cy="110" r="90" fill="none" stroke="var(--accent2)" stroke-width="36" stroke-dasharray="90 452" stroke-dashoffset="-113"/>
+      <circle cx="110" cy="110" r="90" fill="none" stroke="var(--accent3)" stroke-width="36" stroke-dasharray="68 452" stroke-dashoffset="-203"/>
+      <circle cx="110" cy="110" r="90" fill="none" stroke="var(--gold)" stroke-width="36" stroke-dasharray="45 452" stroke-dashoffset="-271"/>
+      <circle cx="110" cy="110" r="90" fill="none" stroke="#a78bfa" stroke-width="36" stroke-dasharray="136 452" stroke-dashoffset="-316"/>
+    </svg>
+    <div class="pie-legend">
+      <div class="pie-item"><div class="pie-dot" style="background:var(--accent)"></div>Domestic Violence (25%)</div>
+      <div class="pie-item"><div class="pie-dot" style="background:var(--accent2)"></div>Harassment (20%)</div>
+      <div class="pie-item"><div class="pie-dot" style="background:var(--accent3)"></div>Stalking (15%)</div>
+      <div class="pie-item"><div class="pie-dot" style="background:var(--gold)"></div>Cyber Crime (10%)</div>
+      <div class="pie-item"><div class="pie-dot" style="background:#a78bfa"></div>Other (30%)</div>
     </div>
   </div>
 
+  <div id="chart-trend" class="chart-view">
+    <p style="color:var(--muted);font-size:0.85rem;margin-bottom:16px;">Year-on-year total reported cases against women in HP. Declining trend reflects improved reporting awareness.</p>
+    <div class="trend-chart" id="trend-chart"></div>
+  </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">🛡️ ShieldHer — Madhya Pradesh</div>
-  <p class="footer-text">Built with 💜 for Women's Safety across Madhya Pradesh<br/>Every woman deserves to feel safe — in every district, every village, every city.</p>
-  <div class="footer-hotlines">
-    <div class="fh-item"><strong>112</strong> Emergency</div>
-    <div class="fh-item"><strong>1091</strong> Women</div>
-    <div class="fh-item"><strong>100</strong> Police</div>
-    <div class="fh-item"><strong>181</strong> Mahila</div>
-    <div class="fh-item"><strong>1090</strong> MP Women Power</div>
-    <div class="fh-item"><strong>1930</strong> Cyber Crime</div>
-    <div class="fh-item"><strong>15100</strong> Legal Aid</div>
-    <div class="fh-item"><strong>182</strong> Railway</div>
-    <div class="fh-item"><strong>1098</strong> Childline</div>
+  <div class="footer-brand">🛡️ ShieldHer-22 HP</div>
+  <div class="footer-sub">Built with 💜 for Women's Safety across Himachal Pradesh<br>Every woman deserves to feel safe — in every district, every village, every city.</div>
+  <div class="footer-nums">
+    <div class="footer-num"><strong>112</strong> Emergency</div>
+    <div class="footer-num"><strong>1091</strong> Women</div>
+    <div class="footer-num"><strong>100</strong> HP Police</div>
+    <div class="footer-num"><strong>181</strong> Mahila</div>
+    <div class="footer-num"><strong>1515</strong> HP Women Safety</div>
+    <div class="footer-num"><strong>1930</strong> Cyber Crime</div>
+    <div class="footer-num"><strong>15100</strong> Legal Aid</div>
+    <div class="footer-num"><strong>182</strong> Railway</div>
+    <div class="footer-num"><strong>1098</strong> Childline</div>
   </div>
+  <div class="footer-copy">© 2025 ShieldHer-22 HP — Himachal Pradesh Women Safety Portal</div>
 </footer>
 
 <script>
-// ═══════════════════════════════════════
-// SAFETY SCORE PREDICTOR
-// ═══════════════════════════════════════
-const safetyDict = {
-  "mp nagar":78,"tt nagar":72,"new market":70,"arera colony":80,
-  "chowk bazaar":42,"bus stand":50,"railway station":52,"civil lines":82,
-  "isolated lane":16,"dark alley":14,"market area":60,"residential":74,
-  "indore":65,"bhopal":70,"gwalior":58,"jabalpur":62,"ujjain":60,
-  "morena":45,"bhind":43,"rewa":55,"sagar":58,"katni":52
-};
+// ── SOS ──
+let sosTimer = null;
+let contacts = {};
 
-const riskTuple = ["Time of Day","Area Type","Street Lighting","Crowd Density","Police Proximity"];
-
-function predictSafety() {
-  const area     = document.getElementById('pred-area').value.trim().toLowerCase();
-  const district = document.getElementById('pred-district').value.toLowerCase();
-  const time     = document.getElementById('pred-time').value;
-  const atype    = document.getElementById('pred-areatype').value;
-
-  // Dictionary lookup
-  let base = safetyDict[area] || safetyDict[district] || 62;
-
-  // Time penalty (tuple-driven)
-  const timePenalty = {day:0, evening:-8, night:-20, latenight:-32};
-  // Area type penalty
-  const typePenalty = {market:+6, residential:+4, isolated:-28, transport:-10, govt:+10};
-
-  let score = base + (timePenalty[time]||0) + (typePenalty[atype]||0);
-  score = Math.max(8, Math.min(100, Math.round(score)));
-
-  // Set → unique alerts (no duplicates)
-  const alertSet = new Set();
-  if (time === 'night' || time === 'latenight') alertSet.add("🌙 Avoid travelling alone after 9PM");
-  if (atype === 'isolated') { alertSet.add("⚠️ This area type is HIGH RISK — avoid alone"); alertSet.add("📍 Share live location immediately"); }
-  if (atype === 'transport') alertSet.add("🚌 Stay in well-lit sections of transport hubs");
-  if (score < 40) { alertSet.add("🚨 HIGH RISK — call 112 if you feel unsafe"); alertSet.add("👥 Do NOT be alone here"); }
-  if (score < 60) alertSet.add("📱 Keep 112 ready on speed dial");
-  alertSet.add("🗺️ Share your live Google Maps location with family");
-  alertSet.add("🔋 Ensure your phone is fully charged");
-
-  // Show result
-  document.getElementById('pred-result').style.display = 'block';
-  document.getElementById('pred-result').scrollIntoView({behavior:'smooth', block:'nearest'});
-
-  // Animate score ring
-  const circle  = document.getElementById('score-circle');
-  const numEl   = document.getElementById('score-num');
-  const labelEl = document.getElementById('score-label');
-  const subEl   = document.getElementById('score-sub');
-
-  const circumference = 2 * Math.PI * 68; // 427
-  const offset = circumference - (score / 100) * circumference;
-  let color = score >= 70 ? '#00e676' : score >= 45 ? '#ffd600' : '#ff3d8b';
-  circle.style.stroke = color;
-  circle.style.strokeDashoffset = offset;
-  numEl.textContent = score;
-  numEl.style.color = color;
-
-  if (score >= 70) { labelEl.textContent = '✅ Relatively Safe'; labelEl.style.color = '#00e676'; subEl.textContent = 'Stay alert and follow standard precautions'; }
-  else if (score >= 45) { labelEl.textContent = '⚠️ Moderate Risk'; labelEl.style.color = '#ffd600'; subEl.textContent = 'Extra caution advised — stay aware at all times'; }
-  else { labelEl.textContent = '🚨 High Risk Area'; labelEl.style.color = '#ff3d8b'; subEl.textContent = 'Avoid this area alone — take immediate precautions'; }
-
-  // Risk factors breakdown
-  const rfVals = [
-    {name:'Time of Day', val: time==='day'?90:time==='evening'?65:time==='night'?35:15, color:'#00bcd4'},
-    {name:'Area Type', val: atype==='govt'?88:atype==='residential'?78:atype==='market'?65:atype==='transport'?52:20, color:'#7c3aed'},
-    {name:'Street Lighting', val: atype==='isolated'?20:time==='day'?95:60, color:'#ffd600'},
-    {name:'Crowd Density', val: atype==='market'?80:atype==='transport'?65:atype==='isolated'?10:50, color:'#ff7043'},
-    {name:'Police Proximity', val: district==='bhopal'||district==='indore'?75:55, color:'#00e676'},
-  ];
-  document.getElementById('risk-factors').innerHTML = `
-    <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:.88rem;color:#f0eafb;margin-bottom:12px;">📐 Risk Factor Analysis <span style="font-size:.7rem;color:#a09ab8;font-weight:500;">(Tuple-driven)</span></div>
-    ${rfVals.map(r=>`
-      <div style="margin-bottom:10px;">
-        <div style="display:flex;justify-content:space-between;font-size:.78rem;color:#a09ab8;margin-bottom:4px;"><span>${r.name}</span><span style="color:${r.color};font-weight:700;">${r.val}%</span></div>
-        <div style="background:rgba(255,255,255,.06);border-radius:50px;height:7px;">
-          <div style="background:${r.color};width:${r.val}%;height:7px;border-radius:50px;transition:width 1s ease;"></div>
-        </div>
-      </div>`).join('')}`;
-
-  // Alerts (Set)
-  document.getElementById('alert-set').innerHTML = `
-    <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:.88rem;color:#f0eafb;margin-bottom:10px;">🔵 Active Safety Alerts <span style="font-size:.7rem;color:#a09ab8;font-weight:500;">(Set — ${alertSet.size} unique)</span></div>
-    <div style="display:flex;flex-direction:column;gap:7px;">
-      ${[...alertSet].map(a=>`<div style="background:rgba(255,255,255,.04);border-left:3px solid #ff3d8b;border-radius:0 9px 9px 0;padding:9px 14px;font-size:.82rem;color:#f0eafb;">${a}</div>`).join('')}
-    </div>`;
-
-  // Recommendations
-  document.getElementById('recommendations').innerHTML = `
-    <div style="background:rgba(0,230,118,.08);border:1px solid rgba(0,230,118,.2);border-radius:12px;padding:16px;">
-      <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;color:#00e676;margin-bottom:8px;">✅ Recommended Actions</div>
-      <div style="font-size:.8rem;color:#a09ab8;line-height:1.8;">
-        ${score < 40 ? '🚨 Leave immediately if possible. Call 112 now. Do NOT be alone.<br/>' : ''}
-        📍 Share Google Maps live location with a family member before entering this area.<br/>
-        📞 Save 112, 100, 181, 1090 on speed dial.<br/>
-        🔋 Keep your phone charged and mobile data ON.<br/>
-        ${atype==='isolated'?'🚫 Avoid this area type — especially alone or after dark.<br/>':''}
-        ${time==='night'||time==='latenight'?'🌙 Night travel: take only verified cabs, share ride details.<br/>':''}
-      </div>
-    </div>`;
-}
-
-// ═══════════════════════════════════════
-// CRIME CHARTS (Chart.js)
-// ═══════════════════════════════════════
-let mainChartInstance = null;
-
-function showChart(type, el) {
-  document.querySelectorAll('.chart-tab-btn').forEach(b => {
-    b.style.background = '#13132a'; b.style.color = '#a09ab8'; b.style.border = '1px solid rgba(255,255,255,.1)';
-  });
-  el.style.background = '#ff3d8b'; el.style.color = '#fff'; el.style.border = 'none';
-  if (mainChartInstance) mainChartInstance.destroy();
-  const ctx = document.getElementById('mainChart').getContext('2d');
-  const gridColor = 'rgba(255,255,255,.05)';
-  const textColor = '#a09ab8';
-
-  if (type === 'bar') {
-    mainChartInstance = new Chart(ctx, { type:'bar', data:{
-      labels:['Indore','Bhopal','Gwalior','Jabalpur','Morena','Ujjain','Sagar','Rewa','Chhindwara','Satna'],
-      datasets:[{label:'Reported Cases 2024',data:[1842,1240,980,840,760,620,480,390,320,280],
-        backgroundColor:['#ff3d8b','#ff7043','#7c3aed','#00bcd4','#ffd600','#00e676','#ff3d8b','#7c3aed','#00bcd4','#ff7043'],
-        borderRadius:8,borderSkipped:false}]},
-      options:{responsive:true,plugins:{legend:{labels:{color:textColor}},tooltip:{backgroundColor:'#13132a',titleColor:'#f0eafb',bodyColor:'#a09ab8'}},
-        scales:{x:{ticks:{color:textColor},grid:{color:gridColor}},y:{ticks:{color:textColor},grid:{color:gridColor}}}}});
-  } else if (type === 'safety') {
-    mainChartInstance = new Chart(ctx, { type:'bar', data:{
-      labels:['Bhopal','Indore','Jabalpur','Ujjain','Gwalior','Rewa','Sagar','Morena','Bhind','Katni'],
-      datasets:[{label:'Safety Index Score (out of 100)',data:[70,65,62,60,58,55,58,45,43,52],
-        backgroundColor:function(c){const v=c.parsed.y; return v>=65?'#00e676':v>=55?'#ffd600':'#ff3d8b';},
-        borderRadius:8,borderSkipped:false}]},
-      options:{responsive:true,plugins:{legend:{labels:{color:textColor}}},
-        scales:{x:{ticks:{color:textColor},grid:{color:gridColor}},y:{min:0,max:100,ticks:{color:textColor},grid:{color:gridColor}}}}});
-  } else if (type === 'type') {
-    mainChartInstance = new Chart(ctx, { type:'doughnut', data:{
-      labels:['Eve-Teasing','Domestic Violence','Cyber Crime','Stalking','Assault','Trafficking','Other'],
-      datasets:[{data:[32,28,18,10,6,3,3],
-        backgroundColor:['#ff3d8b','#ff7043','#00bcd4','#7c3aed','#ffd600','#00e676','#a09ab8'],
-        borderWidth:0, hoverOffset:8}]},
-      options:{responsive:true,cutout:'60%',plugins:{legend:{labels:{color:textColor,padding:16}},tooltip:{backgroundColor:'#13132a',titleColor:'#f0eafb',bodyColor:'#a09ab8'}}}});
-  } else if (type === 'trend') {
-    mainChartInstance = new Chart(ctx, { type:'line', data:{
-      labels:['2019','2020','2021','2022','2023','2024'],
-      datasets:[
-        {label:'Reported Cases (MP)',data:[8200,7400,8800,9600,10200,11400],borderColor:'#ff3d8b',backgroundColor:'rgba(255,61,139,.1)',tension:.4,fill:true,pointBackgroundColor:'#ff3d8b',pointRadius:5},
-        {label:'Cases Resolved',data:[5100,4800,6200,7100,7800,9200],borderColor:'#00e676',backgroundColor:'rgba(0,230,118,.08)',tension:.4,fill:true,pointBackgroundColor:'#00e676',pointRadius:5}
-      ]},
-      options:{responsive:true,plugins:{legend:{labels:{color:textColor}}},
-        scales:{x:{ticks:{color:textColor},grid:{color:gridColor}},y:{ticks:{color:textColor},grid:{color:gridColor}}}}});
+function saveContacts() {
+  contacts = {
+    parent: document.getElementById('parent-num').value,
+    contact2: document.getElementById('contact2').value,
+    name: document.getElementById('your-name').value
+  };
+  document.getElementById('save-confirm').style.display = 'block';
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(pos => {
+      document.getElementById('gps-status').textContent = '📍 GPS Ready: ' + pos.coords.latitude.toFixed(4) + ', ' + pos.coords.longitude.toFixed(4);
+    }, () => {
+      document.getElementById('gps-status').textContent = '📍 GPS: Enable location for SOS';
+    });
   }
 }
 
-// Load Chart.js then init default chart
-(function loadChartJS() {
-  if (window.Chart) { showChart('bar', document.querySelector('.chart-tab-btn')); return; }
-  const s = document.createElement('script');
-  s.src = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js';
-  s.onload = () => showChart('bar', document.querySelector('.chart-tab-btn'));
-  document.head.appendChild(s);
-})();
-const mpDistricts = [
-  // ── BHOPAL DIVISION ──
-  { name:"Bhopal", division:"bhopal-div", emoji:"🏙️", police:"0755-2443500", hospital:"AIIMS Bhopal: 0755-2672335", sakhi:"181", legal:"0755-2550011", maps:"https://maps.google.com/?q=Bhopal+Police+Control+Room" },
-  { name:"Sehore", division:"bhopal-div", emoji:"🌳", police:"07562-220100", hospital:"District Hospital Sehore: 07562-222204", sakhi:"181", legal:"07562-222600", maps:"https://maps.google.com/?q=Sehore+Police+Station+MP" },
-  { name:"Raisen", division:"bhopal-div", emoji:"🏯", police:"07482-220100", hospital:"District Hospital Raisen: 07482-220500", sakhi:"181", legal:"07482-222200", maps:"https://maps.google.com/?q=Raisen+Police+Station+MP" },
-  { name:"Vidisha", division:"bhopal-div", emoji:"🕌", police:"07592-232100", hospital:"District Hospital Vidisha: 07592-232500", sakhi:"181", legal:"07592-232800", maps:"https://maps.google.com/?q=Vidisha+Police+Station+MP" },
-  { name:"Rajgarh", division:"bhopal-div", emoji:"🌾", police:"07372-232100", hospital:"District Hospital Rajgarh: 07372-232500", sakhi:"181", legal:"07372-232800", maps:"https://maps.google.com/?q=Rajgarh+Police+Station+MP" },
-
-  // ── INDORE DIVISION ──
-  { name:"Indore", division:"indore-div", emoji:"🌆", police:"0731-2709100", hospital:"MY Hospital (MGM): 0731-2527261", sakhi:"181", legal:"0731-2466820", maps:"https://maps.google.com/?q=Indore+Police+Control+Room" },
-  { name:"Dhar", division:"indore-div", emoji:"🏺", police:"07292-232100", hospital:"District Hospital Dhar: 07292-232500", sakhi:"181", legal:"07292-232800", maps:"https://maps.google.com/?q=Dhar+Police+Station+MP" },
-  { name:"Jhabua", division:"indore-div", emoji:"🌿", police:"07392-232100", hospital:"District Hospital Jhabua: 07392-232500", sakhi:"181", legal:"07392-232800", maps:"https://maps.google.com/?q=Jhabua+Police+Station+MP" },
-  { name:"Alirajpur", division:"indore-div", emoji:"⛰️", police:"07394-232100", hospital:"District Hospital Alirajpur: 07394-232500", sakhi:"181", legal:"07394-232800", maps:"https://maps.google.com/?q=Alirajpur+Police+Station+MP" },
-  { name:"Barwani", division:"indore-div", emoji:"🌊", police:"07290-232100", hospital:"District Hospital Barwani: 07290-232500", sakhi:"181", legal:"07290-232800", maps:"https://maps.google.com/?q=Barwani+Police+Station+MP" },
-  { name:"Khargone (W. Nimar)", division:"indore-div", emoji:"🌻", police:"07282-232100", hospital:"District Hospital Khargone: 07282-232500", sakhi:"181", legal:"07282-232800", maps:"https://maps.google.com/?q=Khargone+Police+Station+MP" },
-  { name:"Khandwa (E. Nimar)", division:"indore-div", emoji:"🍃", police:"0733-2224100", hospital:"District Hospital Khandwa: 0733-2224500", sakhi:"181", legal:"0733-2224800", maps:"https://maps.google.com/?q=Khandwa+Police+Station+MP" },
-  { name:"Burhanpur", division:"indore-div", emoji:"🕍", police:"07325-232100", hospital:"District Hospital Burhanpur: 07325-232500", sakhi:"181", legal:"07325-232800", maps:"https://maps.google.com/?q=Burhanpur+Police+Station+MP" },
-
-  // ── GWALIOR DIVISION ──
-  { name:"Gwalior", division:"gwalior-div", emoji:"🏰", police:"0751-2340100", hospital:"JAH Hospital Gwalior: 0751-2420400", sakhi:"181", legal:"0751-2424545", maps:"https://maps.google.com/?q=Gwalior+Police+Control+Room" },
-  { name:"Shivpuri", division:"gwalior-div", emoji:"🐅", police:"07492-232100", hospital:"District Hospital Shivpuri: 07492-232500", sakhi:"181", legal:"07492-232800", maps:"https://maps.google.com/?q=Shivpuri+Police+Station+MP" },
-  { name:"Guna", division:"gwalior-div", emoji:"🌾", police:"07542-255100", hospital:"District Hospital Guna: 07542-255500", sakhi:"181", legal:"07542-255800", maps:"https://maps.google.com/?q=Guna+Police+Station+MP" },
-  { name:"Ashoknagar", division:"gwalior-div", emoji:"🏡", police:"07543-232100", hospital:"District Hospital Ashoknagar: 07543-232500", sakhi:"181", legal:"07543-232800", maps:"https://maps.google.com/?q=Ashoknagar+Police+Station+MP" },
-  { name:"Datia", division:"gwalior-div", emoji:"🔱", police:"07522-232100", hospital:"District Hospital Datia: 07522-232500", sakhi:"181", legal:"07522-232800", maps:"https://maps.google.com/?q=Datia+Police+Station+MP" },
-
-  // ── JABALPUR DIVISION ──
-  { name:"Jabalpur", division:"jabalpur-div", emoji:"🌿", police:"0761-2626100", hospital:"Victoria Hospital: 0761-2622832", sakhi:"181", legal:"0761-2623456", maps:"https://maps.google.com/?q=Jabalpur+Police+Control+Room" },
-  { name:"Katni", division:"jabalpur-div", emoji:"⛏️", police:"07622-232100", hospital:"District Hospital Katni: 07622-232500", sakhi:"181", legal:"07622-232800", maps:"https://maps.google.com/?q=Katni+Police+Station+MP" },
-  { name:"Seoni", division:"jabalpur-div", emoji:"🐺", police:"07692-220100", hospital:"District Hospital Seoni: 07692-220500", sakhi:"181", legal:"07692-220800", maps:"https://maps.google.com/?q=Seoni+Police+Station+MP" },
-  { name:"Chhindwara", division:"jabalpur-div", emoji:"🌲", police:"07162-232100", hospital:"District Hospital Chhindwara: 07162-232500", sakhi:"181", legal:"07162-232800", maps:"https://maps.google.com/?q=Chhindwara+Police+Station+MP" },
-  { name:"Narsinghpur", division:"jabalpur-div", emoji:"🌱", police:"07792-232100", hospital:"District Hospital Narsinghpur: 07792-232500", sakhi:"181", legal:"07792-232800", maps:"https://maps.google.com/?q=Narsinghpur+Police+Station+MP" },
-  { name:"Mandla", division:"jabalpur-div", emoji:"🦚", police:"07642-250100", hospital:"District Hospital Mandla: 07642-250500", sakhi:"181", legal:"07642-250800", maps:"https://maps.google.com/?q=Mandla+Police+Station+MP" },
-  { name:"Dindori", division:"jabalpur-div", emoji:"🏞️", police:"07644-232100", hospital:"District Hospital Dindori: 07644-232500", sakhi:"181", legal:"07644-232800", maps:"https://maps.google.com/?q=Dindori+Police+Station+MP" },
-  { name:"Balaghat", division:"jabalpur-div", emoji:"🦁", police:"07632-242100", hospital:"District Hospital Balaghat: 07632-242500", sakhi:"181", legal:"07632-242800", maps:"https://maps.google.com/?q=Balaghat+Police+Station+MP" },
-
-  // ── REWA DIVISION ──
-  { name:"Rewa", division:"rewa-div", emoji:"🏔️", police:"07662-232100", hospital:"District Hospital Rewa: 07662-232500", sakhi:"181", legal:"07662-232800", maps:"https://maps.google.com/?q=Rewa+Police+Station+MP" },
-  { name:"Satna", division:"rewa-div", emoji:"🪨", police:"07672-232100", hospital:"District Hospital Satna: 07672-232500", sakhi:"181", legal:"07672-232800", maps:"https://maps.google.com/?q=Satna+Police+Station+MP" },
-  { name:"Sidhi", division:"rewa-div", emoji:"⛰️", police:"07822-232100", hospital:"District Hospital Sidhi: 07822-232500", sakhi:"181", legal:"07822-232800", maps:"https://maps.google.com/?q=Sidhi+Police+Station+MP" },
-  { name:"Singrauli", division:"rewa-div", emoji:"⚡", police:"07805-232100", hospital:"District Hospital Singrauli: 07805-232500", sakhi:"181", legal:"07805-232800", maps:"https://maps.google.com/?q=Singrauli+Police+Station+MP" },
-
-  // ── SAGAR DIVISION ──
-  { name:"Sagar", division:"sagar-div", emoji:"🌾", police:"07582-232100", hospital:"Bundelkhand Medical College: 07582-232700", sakhi:"181", legal:"07582-232800", maps:"https://maps.google.com/?q=Sagar+Police+Station+MP" },
-  { name:"Damoh", division:"sagar-div", emoji:"🕌", police:"07812-232100", hospital:"District Hospital Damoh: 07812-232500", sakhi:"181", legal:"07812-232800", maps:"https://maps.google.com/?q=Damoh+Police+Station+MP" },
-  { name:"Panna", division:"sagar-div", emoji:"💎", police:"07732-252100", hospital:"District Hospital Panna: 07732-252500", sakhi:"181", legal:"07732-252800", maps:"https://maps.google.com/?q=Panna+Police+Station+MP" },
-  { name:"Tikamgarh", division:"sagar-div", emoji:"🏯", police:"07683-232100", hospital:"District Hospital Tikamgarh: 07683-232500", sakhi:"181", legal:"07683-232800", maps:"https://maps.google.com/?q=Tikamgarh+Police+Station+MP" },
-  { name:"Chhatarpur", division:"sagar-div", emoji:"🗿", police:"07682-242100", hospital:"District Hospital Chhatarpur: 07682-242500", sakhi:"181", legal:"07682-242800", maps:"https://maps.google.com/?q=Chhatarpur+Police+Station+MP" },
-  { name:"Niwari", division:"sagar-div", emoji:"🌸", police:"07680-232100", hospital:"District Hospital Niwari: 07680-232500", sakhi:"181", legal:"07680-232800", maps:"https://maps.google.com/?q=Niwari+Police+Station+MP" },
-
-  // ── UJJAIN DIVISION ──
-  { name:"Ujjain", division:"ujjain-div", emoji:"🕌", police:"0734-2515100", hospital:"District Hospital Ujjain: 0734-2514077", sakhi:"181", legal:"0734-2512200", maps:"https://maps.google.com/?q=Ujjain+Police+Station" },
-  { name:"Dewas", division:"ujjain-div", emoji:"🌾", police:"07272-232100", hospital:"District Hospital Dewas: 07272-232500", sakhi:"181", legal:"07272-232800", maps:"https://maps.google.com/?q=Dewas+Police+Station+MP" },
-  { name:"Shajapur", division:"ujjain-div", emoji:"🌻", police:"07364-232100", hospital:"District Hospital Shajapur: 07364-232500", sakhi:"181", legal:"07364-232800", maps:"https://maps.google.com/?q=Shajapur+Police+Station+MP" },
-  { name:"Agar Malwa", division:"ujjain-div", emoji:"🌼", police:"07366-232100", hospital:"District Hospital Agar Malwa: 07366-232500", sakhi:"181", legal:"07366-232800", maps:"https://maps.google.com/?q=Agar+Malwa+Police+Station+MP" },
-  { name:"Ratlam", division:"ujjain-div", emoji:"🚂", police:"07412-232100", hospital:"District Hospital Ratlam: 07412-232500", sakhi:"181", legal:"07412-232800", maps:"https://maps.google.com/?q=Ratlam+Police+Station+MP" },
-  { name:"Mandsaur", division:"ujjain-div", emoji:"🏺", police:"07422-234100", hospital:"District Hospital Mandsaur: 07422-234500", sakhi:"181", legal:"07422-234800", maps:"https://maps.google.com/?q=Mandsaur+Police+Station+MP" },
-  { name:"Neemuch", division:"ujjain-div", emoji:"🌿", police:"07423-220100", hospital:"District Hospital Neemuch: 07423-220500", sakhi:"181", legal:"07423-220800", maps:"https://maps.google.com/?q=Neemuch+Police+Station+MP" },
-
-  // ── NARMADAPURAM DIVISION ──
-  { name:"Narmadapuram (Hoshangabad)", division:"narmadapuram-div", emoji:"🌊", police:"07574-252100", hospital:"District Hospital Hoshangabad: 07574-252500", sakhi:"181", legal:"07574-252800", maps:"https://maps.google.com/?q=Narmadapuram+Police+Station+MP" },
-  { name:"Betul", division:"narmadapuram-div", emoji:"🌲", police:"07141-232100", hospital:"District Hospital Betul: 07141-232500", sakhi:"181", legal:"07141-232800", maps:"https://maps.google.com/?q=Betul+Police+Station+MP" },
-  { name:"Harda", division:"narmadapuram-div", emoji:"🌾", police:"07577-232100", hospital:"District Hospital Harda: 07577-232500", sakhi:"181", legal:"07577-232800", maps:"https://maps.google.com/?q=Harda+Police+Station+MP" },
-
-  // ── CHAMBAL DIVISION ──
-  { name:"Morena", division:"chambal-div", emoji:"🦁", police:"07532-232100", hospital:"District Hospital Morena: 07532-232500", sakhi:"181", legal:"07532-232800", maps:"https://maps.google.com/?q=Morena+Police+Station+MP" },
-  { name:"Bhind", division:"chambal-div", emoji:"🌊", police:"07534-232100", hospital:"District Hospital Bhind: 07534-232500", sakhi:"181", legal:"07534-232800", maps:"https://maps.google.com/?q=Bhind+Police+Station+MP" },
-  { name:"Sheopur", division:"chambal-div", emoji:"🐆", police:"07530-232100", hospital:"District Hospital Sheopur: 07530-232500", sakhi:"181", legal:"07530-232800", maps:"https://maps.google.com/?q=Sheopur+Police+Station+MP" },
-
-  // ── SHAHDOL DIVISION ──
-  { name:"Shahdol", division:"shahdol-div", emoji:"⛰️", police:"07652-232100", hospital:"District Hospital Shahdol: 07652-232500", sakhi:"181", legal:"07652-232800", maps:"https://maps.google.com/?q=Shahdol+Police+Station+MP" },
-  { name:"Anuppur", division:"shahdol-div", emoji:"🌿", police:"07659-222100", hospital:"District Hospital Anuppur: 07659-222500", sakhi:"181", legal:"07659-222800", maps:"https://maps.google.com/?q=Anuppur+Police+Station+MP" },
-  { name:"Umaria", division:"shahdol-div", emoji:"🐯", police:"07653-222100", hospital:"District Hospital Umaria: 07653-222500", sakhi:"181", legal:"07653-222800", maps:"https://maps.google.com/?q=Umaria+Police+Station+MP" },
-];
-
-// Accent colors cycling
-const hexColors   = ['#ff3d8b','#00bcd4','#7c3aed','#ff7043','#00e676','#ffd600'];
-const bgColors    = ['rgba(255,61,139,.18)','rgba(0,188,212,.18)','rgba(124,58,237,.18)','rgba(255,112,67,.18)','rgba(0,230,118,.18)','rgba(255,214,0,.18)'];
-
-function buildCard(d, i) {
-  const c    = i % 6;
-  const col  = hexColors[c];
-  const col2 = hexColors[(c+1)%6];
-  const bg   = bgColors[c];
-  const divLabel = d.division.replace('-div','').replace(/-/g,' ');
-  const polTel   = d.police.replace(/[-\s]/g,'');
-  const hospName = d.hospital.split(': ')[0];
-  const hospTel  = (d.hospital.split(': ')[1] || '').replace(/[-\s]/g,'');
-
-  return `
-  <div data-division="${d.division}" style="background:#13132a;border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:22px;position:relative;overflow:hidden;box-sizing:border-box;">
-    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,${col},${col2});"></div>
-
-    <!-- Header -->
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
-      <div style="width:44px;height:44px;border-radius:12px;background:${bg};display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">${d.emoji}</div>
-      <div style="flex:1;min-width:0;">
-        <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:#f0eafb;">${d.name}</div>
-        <div style="font-size:.65rem;color:#a09ab8;text-transform:uppercase;letter-spacing:.07em;">${divLabel} Division</div>
-      </div>
-      <a href="${d.maps}" target="_blank" style="background:rgba(0,188,212,.15);border:1px solid rgba(0,188,212,.3);color:#00bcd4;padding:5px 11px;border-radius:50px;font-size:.65rem;font-weight:700;text-decoration:none;white-space:nowrap;flex-shrink:0;">🗺️ Maps</a>
-    </div>
-
-    <!-- Police Row -->
-    <div style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.04);border-radius:10px;padding:10px 12px;margin-bottom:8px;">
-      <span style="font-size:1.2rem;flex-shrink:0;">🚔</span>
-      <div style="flex:1;min-width:0;">
-        <div style="font-size:.65rem;color:#a09ab8;font-weight:700;letter-spacing:.05em;margin-bottom:2px;">POLICE CONTROL ROOM</div>
-        <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:.95rem;color:${col};">${d.police}</div>
-      </div>
-      <a href="tel:${polTel}" style="background:${bg};border:1px solid ${col}55;color:${col};padding:7px 14px;border-radius:50px;font-size:.7rem;font-weight:800;text-decoration:none;flex-shrink:0;">📞 Call</a>
-    </div>
-
-    <!-- Hospital Row -->
-    <div style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.04);border-radius:10px;padding:10px 12px;margin-bottom:10px;">
-      <span style="font-size:1.2rem;flex-shrink:0;">🏥</span>
-      <div style="flex:1;min-width:0;">
-        <div style="font-size:.65rem;color:#a09ab8;font-weight:700;letter-spacing:.05em;margin-bottom:2px;">DISTRICT HOSPITAL</div>
-        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:.82rem;color:#00e676;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${hospName}</div>
-        <div style="font-size:.75rem;color:#00e676;opacity:.8;">${d.hospital.split(': ')[1] || ''}</div>
-      </div>
-      <a href="tel:${hospTel}" style="background:rgba(0,230,118,.15);border:1px solid rgba(0,230,118,.35);color:#00e676;padding:7px 14px;border-radius:50px;font-size:.7rem;font-weight:800;text-decoration:none;flex-shrink:0;">📞 Call</a>
-    </div>
-
-    <!-- 3 Quick Buttons -->
-    <div style="display:flex;gap:7px;">
-      <a href="tel:181" style="flex:1;background:rgba(255,61,139,.15);border:1px solid rgba(255,61,139,.3);color:#ff3d8b;padding:9px 4px;border-radius:10px;font-size:.68rem;font-weight:800;text-decoration:none;text-align:center;line-height:1.5;display:block;">
-        🏠 Sakhi<br/><span style="font-size:.6rem;opacity:.85;font-weight:600;">Call 181</span>
-      </a>
-      <a href="tel:15100" style="flex:1;background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.3);color:#a78bfa;padding:9px 4px;border-radius:10px;font-size:.68rem;font-weight:800;text-decoration:none;text-align:center;line-height:1.5;display:block;">
-        ⚖️ Free Legal<br/><span style="font-size:.6rem;opacity:.85;font-weight:600;">Call 15100</span>
-      </a>
-      <a href="tel:112" style="flex:1;background:linear-gradient(135deg,#ff3d8b,#ff7043);border:none;color:#fff;padding:9px 4px;border-radius:10px;font-size:.68rem;font-weight:800;text-decoration:none;text-align:center;line-height:1.5;display:block;box-shadow:0 4px 14px rgba(255,61,139,.35);">
-        🆘 Emergency<br/><span style="font-size:.6rem;opacity:.9;font-weight:600;">Call 112</span>
-      </a>
-    </div>
-  </div>`;
+function startSOS() {
+  sosTimer = setTimeout(() => {
+    navigator.geolocation.getCurrentPosition(pos => {
+      const lat = pos.coords.latitude, lng = pos.coords.longitude;
+      const msg = `🆘 SOS ALERT from ${contacts.name || 'Unknown'}!\nLocation: https://maps.google.com/?q=${lat},${lng}\nSend help immediately!`;
+      const num = contacts.parent ? contacts.parent.replace(/\D/g,'') : '';
+      if (num) window.open(`https://wa.me/${num}?text=${encodeURIComponent(msg)}`);
+      window.open('tel:112');
+    }, () => {
+      window.open('tel:112');
+    });
+  }, 3000);
 }
 
-function renderDistricts(list) {
-  const container = document.getElementById('districts-container');
-  const noResult  = document.getElementById('no-result');
-  if (!list.length) { container.innerHTML = ''; noResult.style.display = 'block'; return; }
-  noResult.style.display = 'none';
-  container.innerHTML = list.map((d, i) => buildCard(d, i)).join('');
-}
+function cancelSOS() { if (sosTimer) clearTimeout(sosTimer); }
 
-function filterDistricts() {
-  const q = document.getElementById('district-search').value.trim().toLowerCase();
-  // Reset division tabs
-  document.querySelectorAll('.dist-tab').forEach(t => t.classList.remove('active'));
-  document.querySelector('.dist-tab').classList.add('active');
-  const filtered = mpDistricts.filter(d => d.name.toLowerCase().includes(q) || d.division.includes(q));
-  renderDistricts(filtered);
-}
-
-function filterByDiv(div, el) {
-  document.getElementById('district-search').value = '';
-  document.querySelectorAll('.dist-tab').forEach(t => t.classList.remove('active'));
-  el.classList.add('active');
-  const filtered = div === 'all' ? mpDistricts : mpDistricts.filter(d => d.division === div);
-  renderDistricts(filtered);
-}
-
-// Initial render — all districts
-renderDistricts(mpDistricts);
-
-// PREVENTIVE TABS
-function showPrev(id, el) {
-  document.querySelectorAll('.prev-panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.prev-tab').forEach(t => t.classList.remove('active'));
+// ── PREVENTIVE TABS ──
+function switchTab(id, el) {
+  document.querySelectorAll('.preventive-content').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   document.getElementById('prev-' + id).classList.add('active');
   el.classList.add('active');
 }
 
-// SAVE SOS CONTACTS
-function saveContacts() {
-  const pName  = document.getElementById('parent-name').value.trim();
-  const pPhone = document.getElementById('parent-phone').value.trim();
-  if (!pName || !pPhone) { alert('Please enter parent name and phone number.'); return; }
-  localStorage.setItem('sos_p_name', pName);
-  localStorage.setItem('sos_p_phone', pPhone);
-  localStorage.setItem('sos_c2_name',  document.getElementById('contact2-name').value.trim());
-  localStorage.setItem('sos_c2_phone', document.getElementById('contact2-phone').value.trim());
-  document.getElementById('sos-saved').style.display = 'block';
+// ── DISTRICTS ──
+function filterDistricts() {
+  const q = document.getElementById('dist-search').value.toLowerCase();
+  const cards = document.querySelectorAll('.district-card');
+  let found = 0;
+  cards.forEach(c => {
+    const match = c.textContent.toLowerCase().includes(q);
+    c.style.display = match ? '' : 'none';
+    if (match) found++;
+  });
+  document.getElementById('no-result').style.display = found === 0 ? 'block' : 'none';
 }
 
-// LOAD SAVED CONTACTS
-window.addEventListener('load', () => {
-  const pn = localStorage.getItem('sos_p_name');
-  const pp = localStorage.getItem('sos_p_phone');
-  if (pn) document.getElementById('parent-name').value = pn;
-  if (pp) document.getElementById('parent-phone').value = pp;
-  const c2n = localStorage.getItem('sos_c2_name');
-  const c2p = localStorage.getItem('sos_c2_phone');
-  if (c2n) document.getElementById('contact2-name').value = c2n;
-  if (c2p) document.getElementById('contact2-phone').value = c2p;
-  if (pn && pp) document.getElementById('sos-saved').style.display = 'block';
+function filterDiv(div, el) {
+  document.querySelectorAll('.dtab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  const cards = document.querySelectorAll('.district-card');
+  cards.forEach(c => {
+    c.style.display = (div === 'all' || c.dataset.div === div) ? '' : 'none';
+  });
+}
+
+// ── REPORT ──
+function submitReport() {
+  document.getElementById('submit-confirm').style.display = 'block';
+  document.querySelector('.submit-btn').textContent = '✅ Submitted';
+  document.querySelector('.submit-btn').style.background = '#4ade80';
+}
+
+// ── PREDICTOR ──
+function predictScore() {
+  const area = document.getElementById('pred-area').value || 'Unknown';
+  const time = document.getElementById('pred-time').value;
+  const type = document.getElementById('pred-type').value;
+  let score = 75;
+  if (time.includes('Night')) score -= 15;
+  if (time.includes('Late Night')) score -= 25;
+  if (time.includes('Evening')) score -= 8;
+  if (type.includes('Isolated')) score -= 20;
+  if (type.includes('Market') || type.includes('Govt')) score += 8;
+  if (type.includes('Mountain Trail')) score -= 10;
+  if (type.includes('Transport')) score += 5;
+  score = Math.max(20, Math.min(95, score + Math.floor(Math.random() * 10) - 5));
+
+  const tips = score > 70
+    ? ['Area appears relatively safe at this time', 'Continue sharing live location with family', 'Stay aware of your surroundings', 'Keep 112 ready to dial in one tap']
+    : ['Consider taking a different route or time', 'Inform someone of your exact location and route', 'Avoid this area alone — go with company', 'Keep pepper spray accessible and phone charged', 'Use HRTC bus or app-based cab instead of walking'];
+
+  const el = document.getElementById('score-display');
+  const numEl = document.getElementById('score-num');
+  numEl.textContent = score;
+  numEl.style.color = score > 70 ? '#4ade80' : score > 50 ? 'var(--gold)' : 'var(--accent)';
+  document.getElementById('score-tips').innerHTML = tips.map(t => `<li>• ${t}</li>`).join('');
+  el.style.display = 'block';
+}
+
+// ── CHARTS ──
+function switchChart(id, el) {
+  document.querySelectorAll('.chart-view').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.chart-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('chart-' + id).classList.add('active');
+  el.classList.add('active');
+}
+
+const districtData = [
+  { name: 'Kangra', val: 612 },
+  { name: 'Shimla', val: 487 },
+  { name: 'Mandi', val: 365 },
+  { name: 'Solan', val: 298 },
+  { name: 'Una', val: 241 },
+  { name: 'Kullu', val: 218 },
+  { name: 'Hamirpur', val: 195 },
+  { name: 'Bilaspur', val: 172 },
+  { name: 'Chamba', val: 148 },
+  { name: 'Sirmaur', val: 134 },
+  { name: 'Kinnaur', val: 82 },
+  { name: 'Lahaul & Spiti', val: 54 }
+];
+
+const max = 612;
+const barChart = document.getElementById('bar-chart');
+districtData.forEach(d => {
+  const pct = (d.val / max * 100).toFixed(0);
+  barChart.innerHTML += `<div class="bar-row"><div class="bar-district">${d.name}</div><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div><div class="bar-val">${d.val}</div></div>`;
 });
 
-// SOS LOGIC
-let sosInterval = null, sosCount = 3;
+const safetyColors = ['#4ade80','#4ade80','#86efac','#a3e635','#fbbf24','#fbbf24','#fbbf24','#fb923c','#fb923c','#f87171','#4ade80','#4ade80'];
+const safetyScores = [78, 72, 68, 71, 73, 74, 75, 70, 69, 67, 85, 88];
+const si = document.getElementById('safety-index');
+districtData.forEach((d, i) => {
+  si.innerHTML += `<div class="si-card"><div class="si-name">${d.name}</div><div class="si-score" style="color:${safetyColors[i]}">${safetyScores[i]}</div><div style="font-size:0.72rem;color:var(--muted)">/ 100 Safety Index</div></div>`;
+});
 
-function startSOS(e) {
-  if (e) e.preventDefault();
-  const btn = document.getElementById('sosBtn');
-  const status = document.getElementById('sos-status');
-  sosCount = 3;
-  status.style.color = '#ff3d8b';
-  status.textContent = '🔴 Activating in 3...';
-  btn.style.background = 'linear-gradient(135deg,#ff1744,#b71c1c)';
-  sosInterval = setInterval(() => {
-    sosCount--;
-    if (sosCount > 0) {
-      status.textContent = `🔴 Activating in ${sosCount}...`;
-    } else {
-      clearInterval(sosInterval);
-      activateSOS();
-    }
-  }, 1000);
-}
-
-function cancelSOS() {
-  if (sosInterval) { clearInterval(sosInterval); sosInterval = null; }
-  const btn = document.getElementById('sosBtn');
-  const status = document.getElementById('sos-status');
-  if (sosCount > 0) {
-    btn.style.background = 'linear-gradient(135deg,#ff3d8b,#ff1744)';
-    btn.innerHTML = 'SOS<br/>HOLD';
-    status.style.color = '';
-    status.textContent = 'Hold for 3 seconds → sends your GPS to parent + calls police';
-  }
-}
-
-function activateSOS() {
-  const btn    = document.getElementById('sosBtn');
-  const status = document.getElementById('sos-status');
-  const locDiv = document.getElementById('loc-display');
-  const locText= document.getElementById('loc-text');
-  const pName  = localStorage.getItem('sos_p_name')  || 'Emergency Contact';
-  const pPhone = localStorage.getItem('sos_p_phone') || '';
-  const c2Name = localStorage.getItem('sos_c2_name') || '';
-  const c2Phone= localStorage.getItem('sos_c2_phone')|| '';
-
-  btn.style.background = 'linear-gradient(135deg,#00e676,#00bcd4)';
-  btn.innerHTML = '✅<br/>SENT';
-
-  const sendAlerts = (lat, lng) => {
-    const mapsLink = `https://maps.google.com/?q=${lat},${lng}`;
-    locDiv.style.display = 'block';
-    locText.innerHTML = `${lat}°N, ${lng}°E &nbsp;|&nbsp; <a href="${mapsLink}" target="_blank" style="color:var(--teal);">Open in Maps ↗</a>`;
-
-    status.style.color = '#00e676';
-    status.innerHTML = `
-      🚨 <strong>SOS ACTIVATED!</strong><br/>
-      📍 GPS: ${lat}°N, ${lng}°E<br/>
-      📲 WhatsApp alert sending to <strong>${pName}</strong>${c2Name ? ' &amp; ' + c2Name : ''}<br/>
-      🚔 <a href="tel:112" style="color:var(--pink);font-weight:700;text-decoration:underline;">TAP HERE → CALL 112 NOW</a>
-    `;
-
-    const msg = encodeURIComponent(
-      `🆘 *SOS EMERGENCY ALERT*\n\nI need immediate help!\n\n📍 My GPS Location:\n${mapsLink}\n\nCoordinates: ${lat}°N, ${lng}°E\n\nPlease call me NOW and alert police (112) immediately.\n\n— Sent from ShieldHer Safety App`
-    );
-
-    // Send WhatsApp to parent
-    if (pPhone) {
-      setTimeout(() => window.open(`https://wa.me/${pPhone.replace(/\D/g,'')}?text=${msg}`, '_blank'), 800);
-    }
-    // Send WhatsApp to 2nd contact
-    if (c2Phone) {
-      setTimeout(() => window.open(`https://wa.me/${c2Phone.replace(/\D/g,'')}?text=${msg}`, '_blank'), 2000);
-    }
-
-    // Prompt to call 112
-    setTimeout(() => {
-      if (confirm('🚨 SOS alerts sent!\n\nDo you want to call 112 (Police Emergency) now?')) {
-        window.location.href = 'tel:112';
-      }
-    }, 3500);
-  };
-
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      pos => sendAlerts(pos.coords.latitude.toFixed(6), pos.coords.longitude.toFixed(6)),
-      () => {
-        locDiv.style.display = 'block';
-        locText.textContent = '⚠️ GPS access denied. Enable location in browser settings.';
-        status.style.color = '#ff3d8b';
-        status.innerHTML = `⚠️ Could not get GPS location.<br/>📞 <a href="tel:112" style="color:var(--pink);font-weight:700;text-decoration:underline;">TAP TO CALL 112 IMMEDIATELY</a>`;
-      },
-      { enableHighAccuracy: true, timeout: 8000 }
-    );
-  } else {
-    status.innerHTML = `📞 <a href="tel:112" style="color:var(--pink);font-weight:700;">Call 112 immediately</a>`;
-  }
-
-  setTimeout(() => {
-    btn.style.background = 'linear-gradient(135deg,#ff3d8b,#ff1744)';
-    btn.innerHTML = 'SOS<br/>HOLD';
-    status.style.color = '';
-    status.textContent = 'Hold for 3 seconds → sends your GPS to parent + calls police';
-  }, 18000);
-}
-
-// REPORT FORM
-function submitReport() {
-  const type = document.getElementById('f-type').value;
-  const desc = document.getElementById('f-desc').value.trim();
-  if (!type || !desc) { alert('Please fill in Incident Type and Description.'); return; }
-  document.getElementById('reportForm').style.display = 'none';
-  document.getElementById('form-success').style.display = 'block';
-  setTimeout(() => {
-    document.getElementById('reportForm').style.display = 'grid';
-    document.getElementById('form-success').style.display = 'none';
-    document.querySelectorAll('.form-input,.form-textarea,.form-select').forEach(el => el.value = '');
-  }, 7000);
-}
-
-// SCROLL REVEAL
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.08 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-// ACTIVE NAV
-const sections = document.querySelectorAll('section[id]');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 130) current = s.getAttribute('id'); });
-  document.querySelectorAll('.nav-links a').forEach(a => {
-    a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--pink)' : '';
-  });
+const trendData = [
+  { year: '2018', val: 3240, delta: 'up' },
+  { year: '2019', val: 3412, delta: 'up' },
+  { year: '2020', val: 2980, delta: 'down' },
+  { year: '2021', val: 3105, delta: 'up' },
+  { year: '2022', val: 2876, delta: 'down' },
+  { year: '2023', val: 2710, delta: 'down' },
+  { year: '2024', val: 2584, delta: 'down' },
+];
+const tmax = 3412;
+const tc = document.getElementById('trend-chart');
+trendData.forEach(d => {
+  const pct = (d.val / tmax * 100).toFixed(0);
+  const sign = d.delta === 'down' ? '↓' : '↑';
+  tc.innerHTML += `<div class="trend-row"><div class="trend-year">${d.year}</div><div class="trend-bar"><div class="trend-fill" style="width:${pct}%"></div></div><div class="trend-val ${d.delta}">${sign} ${d.val}</div></div>`;
 });
 </script>
 </body>
 </html>
-
