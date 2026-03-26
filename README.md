@@ -1,5 +1,5 @@
 🛡️ SHIELD HER — Safety First
-Live Demo: https://shield-her-safety.netlify.app/
+Live Demo: https://sheildher22hp.netlify.app/
 Shield Her is a safety-focused web platform designed to enhance personal security, especially for women, by providing quick access to emergency tools, awareness resources, and location-based assistance. The platform aims to create a safer digital space where users can stay informed, prepared, and connected during emergencies. Built with a simple yet impactful interface, it focuses on accessibility, speed, and reliability — ensuring help is always just one click away.
 
 ✨ Features
